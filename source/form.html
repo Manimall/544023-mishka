@@ -12,7 +12,9 @@
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть/Закрыть меню</span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -30,104 +32,107 @@
         </ul>
       </div>
     </nav>
-
-    <!-- Здесь название вынесено в отдельный блок, у которого серый фон - предлагаю этот заголовок обернуть в спец. тег, например section -->
     <h1 class="page-header__title">Вязание на заказ</h1>
   </header>
 
 
   <main class="page-main">
-    <form class="form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания!
-      Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-
-      <fieldset class="form__group">
-        <legend class="form__title">Тип</legend>
-          <p>
-            <label for="accessory">
-              <input type="radio" name="type-of-order" id="accessory" value="a" checked>Аксессуар для интерьера
-            </label>
-          </p>
-          <p>
-            <label for="toy">
-              <input type="radio" name="type-of-order" id="toy" value="t">Детская игрушка
-            </label>
-          </p>
-      </fieldset>
-
-      <fieldset class="form__group">
-        <legend class="form__title">Цвет</legend>
-          <p>
-            <label for="white">
-              <input type="checkbox" name="white" id="white" value="Белый" checked>Белый
-            </label>
-          </p>
-
-          <p>
-            <label for="gray">
-              <input type="checkbox" name="gray" id="gray" value="Серый" checked>Серый
-            </label>
-          </p>
-
-          <p>
-            <label for="tiffany">
-              <input type="checkbox" name="tiffany" id="tiffany" value="Тиффани">"Тиффани"
-            </label>
-          </p>
-
-          <p>
-            <label for="black">
-              <input type="checkbox" name="black" id="black" value="Черный">Черный
-            </label>
-          </p>
-
-          <p>
-            <label for="pink">
-              <input type="checkbox" name="pink" id="pink" value="Розовый">Розовый
-            </label>
-          </p>
-
-          <p>
-            <label for="orange">
-              <input type="checkbox" name="orange" id="orange" value="Оранжевый">Оранжевый
-            </label>
-          </p>
-      </fieldset>
-
-      <fieldset class="form__group">
-        <legend class="form__title">ФИО</legend>
-          <h4><label for="name">Имя:</label></h4>
-          <p><input type="text" id="name" name="name" value="" placeholder="Введите ваше имя*" required></p>
-
-          <h4><label for="surname">Фамилия:</label></h4>
-          <p><input type="text" id="surname" name="surname" value="" placeholder="Укажите фамилию*" required></p>
-
-          <h4><label for="patronymic">Отчество:</label></h4>
-          <p><input type="text" id="patronymic" name="patronymic" value="" placeholder="Отчество, если желаете"></p>
-      </fieldset>
-
-      <fieldset class="form_group">
-        <legend class="form__title"><label for="tel">Тел</label></legend>
-        <p><input type="tel" name="tel" id="tel" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required></p>
-      </fieldset>
-
-      <fieldset class="form__tgroup">
-        <legend class="form__title"><label for="email">E-mail</label></legend>
-        <p><input type="email" name="email" id="email" placeholder="Ваш Email*" required></p>
-      </fieldset>
-
-      <fieldset class="form__group">
-        <legend class="form__title"><label for="wishes">Доп</label></legend>
-        <p><textarea name="wishes" id="wishes" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea></p>
-      </fieldset>
-
-      <div class="form__hint">
-        <p class="form__hint-text">*Поля обязательны для заполнения</p>
+    <section class="knitting">
+      <div class="knitting__heading">
+        <h1 class="knitting__title">Каталог товаров</h1>
       </div>
+      <form class="knitting__form form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания!
+        Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-      <button class="form__button button" type="submit">Отправить заказ</button>
+        <fieldset class="form__group">
+          <legend class="form__title">Тип</legend>
+            <p>
+              <label for="accessory">
+                <input type="radio" name="type-of-order" id="accessory" value="a" checked>Аксессуар для интерьера
+              </label>
+            </p>
+            <p>
+              <label for="toy">
+                <input type="radio" name="type-of-order" id="toy" value="t">Детская игрушка
+              </label>
+            </p>
+        </fieldset>
 
-    </form>
+        <fieldset class="form__group">
+          <legend class="form__title">Цвет</legend>
+            <p>
+              <label for="white">
+                <input type="checkbox" name="white" id="white" value="Белый" checked>Белый
+              </label>
+            </p>
+
+            <p>
+              <label for="gray">
+                <input type="checkbox" name="gray" id="gray" value="Серый" checked>Серый
+              </label>
+            </p>
+
+            <p>
+              <label for="tiffany">
+                <input type="checkbox" name="tiffany" id="tiffany" value="Тиффани">"Тиффани"
+              </label>
+            </p>
+
+            <p>
+              <label for="black">
+                <input type="checkbox" name="black" id="black" value="Черный">Черный
+              </label>
+            </p>
+
+            <p>
+              <label for="pink">
+                <input type="checkbox" name="pink" id="pink" value="Розовый">Розовый
+              </label>
+            </p>
+
+            <p>
+              <label for="orange">
+                <input type="checkbox" name="orange" id="orange" value="Оранжевый">Оранжевый
+              </label>
+            </p>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <legend class="form__title">ФИО</legend>
+            <p><label for="name">Имя:</label></p>
+            <p><input type="text" id="name" name="name" value="" placeholder="Введите ваше имя*" required></p>
+
+            <p><label for="surname">Фамилия:</label></p>
+            <p><input type="text" id="surname" name="surname" value="" placeholder="Укажите фамилию*" required></p>
+
+            <p><label for="patronymic">Отчество:</label></p>
+            <p><input type="text" id="patronymic" name="patronymic" value="" placeholder="Отчество, если желаете"></p>
+        </fieldset>
+
+        <fieldset class="form_group">
+          <legend class="form__title"><label for="tel">Тел</label></legend>
+          <p><input type="tel" name="tel" id="tel" pattern="\+7\ [0-9]{3}\ [0-9]{2}\ [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required></p>
+        </fieldset>
+
+        <fieldset class="form__tgroup">
+          <legend class="form__title"><label for="email">E-mail</label></legend>
+          <p><input type="email" name="email" id="email" placeholder="Ваш Email*" required></p>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <legend class="form__title"><label for="wishes">Доп</label></legend>
+          <p><textarea name="wishes" id="wishes" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea></p>
+        </fieldset>
+
+        <div class="form__hint">
+          <p class="form__hint-text">*Поля обязательны для заполнения</p>
+        </div>
+
+        <button class="form__button button" type="submit">Отправить заказ</button>
+
+      </form>
+    </section>
   </main>
 
     <footer class="page-footer">

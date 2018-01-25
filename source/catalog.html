@@ -12,7 +12,9 @@
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть/Закрыть меню</span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -30,13 +32,13 @@
         </ul>
       </div>
     </nav>
-
-    <!-- Здесь название вынесено в отдельный блок, у которого серый фон - предлагаю этот заголовок обернуть в спец. тег, например section -->
-    <h1 class="page-header__title">Каталог товаров</h1>
   </header>
 
   <main class="page-main">
     <section class="catalog">
+      <div class="catalog__heading">
+        <h1 class="catalog__title">Каталог товаров</h1>
+      </div>
       <article class="items__product product">
         <img class="product__img" src="img/photo-1-mobile.svg" alt="Зайчик-попрыгайчик" >
         <h3 class="product__title">Зайчик-попрыгайчик</h3>
