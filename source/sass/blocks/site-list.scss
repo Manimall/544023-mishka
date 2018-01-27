@@ -1,0 +1,23 @@
+.site-list{
+
+}
+
+.site-list__item {
+  list-style: none;
+
+  &--search {
+
+  }
+  &--cart {
+
+  }
+}
+
+.site-list__link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $h-color;
+  text-decoration: none;
+}
