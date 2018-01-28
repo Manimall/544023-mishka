@@ -1,0 +1,59 @@
+.offer {
+
+}
+
+.offer__header {
+
+}
+
+.offer__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $h-color;
+  margin-bottom: 10px;
+}
+
+.offer__product-week {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $green-accent;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.offer__description {
+
+}
+
+.offer__list {
+
+}
+
+.offer__key {
+  line-height: 20;
+}
+
+.offer__value {
+  line-height: 20;
+}
+
+.offer__img {
+  background-image: url("../img/triple-set-mobile@1x.jpg");
+}
+
+.offer__price {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.offer__order {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}

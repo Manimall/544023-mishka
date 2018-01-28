@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg");
 }
 
 .hero__text {
@@ -15,15 +15,20 @@
 }
 
 .hero__item {
-
+  list-style: none;
+  &--lighter {
+  background-color: $green-accent;
+  }
+  &--darker {
+  background-color: $green-dark;
+  }
 }
 
 .hero__link {
-
-  &--lighter{
-
-  }
-  &--darker{
-
-  }
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
 }

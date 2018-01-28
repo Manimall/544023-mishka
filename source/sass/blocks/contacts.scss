@@ -1,0 +1,50 @@
+.contacts {
+
+}
+
+.contacts__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: $h-color;
+  font-weight: bold;
+}
+
+.contacts__info {
+
+}
+
+.contacts__email {
+
+}
+
+.contacts__key {
+  line-height: 30px;
+}
+
+.contacts__value {
+  line-height: 30px;
+}
+
+.contacts__mailto {
+  color: #444444;
+  border-bottom: 2px solid $green-accent;
+}
+
+.contacts__adress {
+
+}
+
+.contacts__map {
+  background-image: url("../img/map-mobile@1x.jpg");
+}
+
+.contacts__write {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #444444;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
