@@ -6,7 +6,7 @@
   font-size: 25px;
   line-height: 30px;
   color: $h-color;
-  font-style: bold;
+  font-weight: $bold;
 }
 
 .reviews__list {
@@ -24,7 +24,7 @@
 .reviews__author-name {
   font-size: 17px;
   color: $h-color;
-  font-style: bold;
+  font-weight: $bold;
 }
 
 .reviews__author-email {
@@ -47,7 +47,7 @@
 .reviews__write {
   font-size: 18px;
   line-height: 20px;
-  font-weight: bold;
+  font-weight: $bold;
   text-transform: uppercase;
 }
 

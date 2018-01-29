@@ -9,7 +9,7 @@
 .product__title {
   font-size: 17px;
   color: $h-color;
-  font-weight: bold;
+  font-weight: $bold;
 }
 
 .product__data {
@@ -19,7 +19,7 @@
 
 .product__price {
   color: $h-color;
-  font-weight: bold;
+  font-weight: $bold;
 }
 
 .product__cart {

@@ -45,12 +45,12 @@
 
 .offer__price {
   font-size: 15px;
-  font-weight: bold;
+  font-weight: $bold;
 }
 
 .offer__order {
   font-size: 17px;
   line-height: 20px;
-  font-weight: bold;
+  font-weight: $bold;
   text-transform: uppercase;
 }

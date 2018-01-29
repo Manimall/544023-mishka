@@ -14,7 +14,7 @@
   font-size: 17px;
   line-height: 16px;
   color: $green-accent;
-  font-weight: bold;
+  font-weight: $bold;
   text-transform: uppercase;
 }
 
@@ -22,7 +22,7 @@ input {
   font-size: 17px;
   line-height: 18px;
   color: $h-color;
-  font-weight: bold;
+  font-weight: $bold;
 }
 
 ::-webkit-input-placeholder,
@@ -50,7 +50,7 @@ input {
   height: 16px;
   color: #444444;
   background-color: #ffffff;
-  font-weight: bold;
+  font-weight: $bold;
   text-transform: uppercase;
   min-height: 52px;
 }
