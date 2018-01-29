@@ -1,23 +1,25 @@
 .product {
-  height: 300px;
+
 }
 
 .product__img {
-  background-image: url("../img/photo-hare-mobile@1x.jpg");
-  height: 195px;
-  width: 260px;
+
 }
 
 .product__title {
-
+  font-size: 17px;
+  color: $h-color;
+  font-weight: bold;
 }
 
 .product__data {
-
+  font-size: 13px;
+  line-height: 30px;
 }
 
 .product__price {
-
+  color: $h-color;
+  font-weight: bold;
 }
 
 .product__cart {
