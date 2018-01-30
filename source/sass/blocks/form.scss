@@ -25,10 +25,7 @@ input {
   font-weight: $bold;
 }
 
-::placeholder,
-:placeholder,
-::-input-placeholder,
-:-input-placeholder {
+::placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
