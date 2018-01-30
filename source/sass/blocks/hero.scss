@@ -1,0 +1,35 @@
+.hero {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 373px;
+}
+
+.hero__text {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: $bold;
+  color: $h-color;
+  text-align: center;
+}
+
+.hero__list {
+  // Comment
+}
+
+.hero__item {
+  list-style: none;
+
+  &--lighter {
+    background-color: $green-accent;
+  }
+
+  &--darker {
+    background-color: $green-dark;
+  }
+}
+
+.hero__link {
+  font-size: 19px;
+  font-weight: $bold;
+  color: #ffffff;
+}

@@ -1,0 +1,21 @@
+.site-list {
+  // Comment
+}
+
+.site-list__item {
+  list-style: none;
+
+  &--search {
+    // Comment
+  }
+
+  &--cart {
+    // Comment
+  }
+}
+
+.site-list__link {
+  font-size: 17px;
+  font-weight: $bold;
+  color: $h-color;
+}

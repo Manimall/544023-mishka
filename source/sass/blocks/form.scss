@@ -1,0 +1,53 @@
+.form {
+  // Comment
+}
+
+.form__intro {
+  font-size: 13px;
+}
+
+.form__group {
+  // Comment
+}
+
+.form__title {
+  font-size: 17px;
+  line-height: 16px;
+  color: $green-accent;
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+
+input {
+  font-size: 17px;
+  line-height: 18px;
+  color: $h-color;
+  font-weight: $bold;
+}
+
+::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.form__hint {
+  // Comment
+}
+
+.form__hint-text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  height: 16px;
+  color: #444444;
+  background-color: #ffffff;
+  font-weight: $bold;
+  text-transform: uppercase;
+  min-height: 52px;
+}

@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: $normal;
+  line-height: 24px;
+  color: #444444;
+  font-style: normal;
+  overflow-x: hidden;
+  opacity: 1;
+
+  background-color: #ffffff;
+}
+
+a {
+  color: #444444;
+  text-decoration: none;
+}
+
+img {
+  // display: block;
+  max-width: 100%;
+  height: auto;
+}
