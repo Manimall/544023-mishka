@@ -1,5 +1,5 @@
 .form {
-
+  // Comment
 }
 
 .form__intro {
@@ -7,7 +7,7 @@
 }
 
 .form__group {
-
+  // Comment
 }
 
 .form__title {
@@ -25,10 +25,10 @@ input {
   font-weight: $bold;
 }
 
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder {
+::placeholder,
+:placeholder,
+::-input-placeholder,
+:-input-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -36,7 +36,7 @@ input {
 }
 
 .form__hint {
-
+  // Comment
 }
 
 .form__hint-text {

@@ -3,8 +3,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -31,7 +31,7 @@ a {
 }
 
 img {
-  display: block;
+  // display: block;
   max-width: 100%;
   height: auto;
 }
