@@ -1,11 +1,52 @@
 .page-footer {
-  // Comment
+  height: 160px;
+  width: 81.25%;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__logo-img {
+  //
 }
 
 .page-footer__social {
-  // Comment
+  height: 80px;
 }
 
 .page-footer__copyright {
-  // Comment
+  height: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    height: 143px;
+    width: 87%;
+  }
+
+  .page-footer__logo {
+    display: flex;
+    align-items: flex-start;
+    width: 17%;
+    padding-right: 20px;
+    // margin-top: -10px;
+  }
+
+  .page-footer__social {
+    height: auto;
+  }
+
+  .page-footer__copyright {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .page-footer {
+    width: 91.3%;
+  }
 }

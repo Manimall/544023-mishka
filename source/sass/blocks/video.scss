@@ -3,13 +3,18 @@
 }
 
 .video__header {
-  // Comment
+  width: 78.5%;
+  margin: 0 auto;
 }
 
 .video__title {
   font-size: 17px;
   color: $h-color;
   font-weight: $bold;
+
+  padding-top: 30px;
+  padding-bottom: 26px;
+  margin: 0;
 }
 
 .video__img {
@@ -18,6 +23,14 @@
 
 .video__text {
   font-size: 13px;
+  width: 78.5%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  margin-top: 34px;
+}
+
+.video__btn {
+  text-align: center;
 }
 
 .video__to-order {
@@ -25,4 +38,30 @@
   line-height: 16px;
   font-weight: $bold;
   text-transform: uppercase;
+
+  width: 78.5%;
+  margin: 0 auto;
+
+  margin-bottom: 33px;
+  min-width: 192px;
+
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+@media only screen and (min-width: 768px) {
+  .video {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .video__img {
+    min-width: 668px;
+    order: -2;
+  }
+
+  .video__to-order {
+    max-width: 584px;
+  }
 }

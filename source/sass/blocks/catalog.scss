@@ -1,9 +1,17 @@
 .catalog {
-  // Comment
+  width: 81.25%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .catalog__heading {
-  // Comment
+  padding-top: 75px;
+  background-color: #f1f1f1;
+  padding-bottom: 81px;
+  min-height: 177px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .catalog__title {
@@ -14,10 +22,34 @@
   text-align: center;
 }
 
+.catalog__product,
+.catalog__video {
+  border: 1px solid #ededed;
+  margin-bottom: 30px;
+}
+
 .catalog__product {
-  // Comment
+  margin-bottom: 30px;
 }
 
 .catalog__video {
   // Comment
+}
+
+@media only screen and (min-width: 768px) {
+  .catalog {
+  width: 87%;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  margin-top: 80px;
+  }
+
+  .catalog__product {
+    height: 334px;
+    margin-bottom: 55px;
+  }
+
+  .catalog__heading {
+    margin-bottom: 80px;
+  }
 }

@@ -4,7 +4,25 @@
     <meta charset="utf-8">
     <title>магазин товаров ручной работы "Mishka"</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          }
+        });
+    </script>
 
   </head>
   <body>
@@ -14,12 +32,17 @@
         <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть/Закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                <img class="site-list__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+               </a>
+            </li>
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -32,19 +55,30 @@
             <li class="site-list__item site-list__item--cart">
               <a class="site-list__link" href="cart.html">Корзина: пока пуста</a>
             </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="new-collection.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="sale.html">Распродажа</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="delivery.html">Бесплатная доставка по России</a>
+            </li>
           </ul>
         </div>
       </nav>
 
       <section class="hero">
         <h1 class="visually-hidden">Mishka - магазин товаров ручной работы</h1>
-        <p class="hero__text">Милые штуки ручной работы для дома</p>
+        <div class="hero__header">
+          <p class="hero__title">Милые штуки ручной работы для дома</p>
+        </div>
         <ul class="hero__list">
           <li class="hero__item hero__item--lighter">
-            <a href="#" class="hero__link">Предметы интерьера</a>
+            <a href="#" class="hero__link">Предметы<br> интерьера</a>
           </li>
           <li class="hero__item hero__item--darker">
-            <a href="#" class="hero__link">Детские игрушки</a>
+            <a href="#" class="hero__link">Детские<br> игрушки</a>
           </li>
         </ul>
       </section>
@@ -64,7 +98,7 @@
             <td class="offer__value">«Тиффани»/серый</td>
           </tr>
           <tr>
-            <td class="offer__key">Диаметр:</td>
+            <td class="offer__key" style="height: 40px">Диаметр:</td>
             <td class="offer__value">25 см</td>
           </tr>
           <tr>
@@ -74,8 +108,10 @@
         </table>
 
         <img class="offer__img" src="img/triple-set-mobile@1x.jpg" width="315" height="260" alt="Вязаные корзинки">
-        <b class="offer__price">Цена: 990 руб.</b>
-        <a class="offer__order button" href="#">Заказать</a>
+        <div class="offer__buy-info">
+          <b class="offer__price">Цена: 990 руб.</b>
+          <a class="offer__order button" href="#">Заказать</a>
+        </div>
       </section>
 
       <section class="advantages">
@@ -122,12 +158,12 @@
 
       <section class="contacts">
         <h3 class="contacts__title">Контакты</h3>
-        <table class="contacts__info">
-          <tr class="contacts__email">
+        <table class="contacts__list">
+          <tr class="contacts__info">
             <td class="contacts__key">e-mail:</td>
             <td class="contacts__value"><a href="info@mimimishkashop.ru" class="contacts__mailto">info@mimimishkashop.ru</a></td>
           </tr>
-          <tr class="contacts__adress">
+          <tr class="contacts__info">
             <td class="contacts__key">адрес:</td>
             <td class="contacts__value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
           </tr>
@@ -138,11 +174,17 @@
           <!--  <iframe src="https://yandex.ru/map-widget/v1/-/CBe4VCs-SD" width="560" height="400" frameborder="0"></iframe> -->
         </div>
 
-        <a class="contacts__write button" href="#">Напишите нам</a>
+        <div class="contacts__btn">
+          <a class="contacts__write button" href="#">Напишите нам</a>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
+      <a class="page-footer__logo" href="#">
+          <img class="page-footer__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+      </a>
+
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -158,8 +200,8 @@
       </div>
 
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link button" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link button--link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
       </div>
     </footer>
 

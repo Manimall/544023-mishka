@@ -1,10 +1,17 @@
 .hero {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   min-height: 373px;
 }
 
-.hero__text {
+.hero__header {
+  width: 81.25%;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+.hero__title {
   font-size: 27px;
   line-height: 30px;
   font-weight: $bold;
@@ -13,11 +20,14 @@
 }
 
 .hero__list {
-  // Comment
+  margin-top: 122px;
+  padding: 0;
 }
 
 .hero__item {
   list-style: none;
+  height: 102px;
+  padding: $gutter;
 
   &--lighter {
     background-color: $green-accent;

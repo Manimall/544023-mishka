@@ -1,8 +1,17 @@
 .button {
   display: inline-block;
-  width: 260px;
   min-height: 52px;
   border: 2px solid #444444;
   text-align: center;
   padding: 18px 30px;
+  // max-width: 295px;
+  // min-width: 260px;
+  // width: 81.25%;
+  // margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    // min-width: 175px;
+  }
 }

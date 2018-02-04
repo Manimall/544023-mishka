@@ -1,11 +1,28 @@
 .page-header {
-  // Comment
+  width: 81.25%;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
 }
 
 .page-header__logo {
-  // Comment
+  display: inline-block;
+  top: 20px;
+  width: 167px;
 }
 
 .page-header__logo-img {
   // Comment
+}
+
+@media only screen and (min-width: 768px) {
+  .page-header {
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 22px;
+  }
+
+  .page-header__logo {
+    display: none;
+  }
 }

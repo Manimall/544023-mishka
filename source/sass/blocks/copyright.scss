@@ -1,5 +1,8 @@
 .copyright {
-  // Comment
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .copyright__text {
@@ -7,8 +10,20 @@
   line-height: 18px;
   color: $h-color;
   font-weight: $bold;
+  padding-right: 20px;
 }
 
 .copyright__link {
   // Comment
+}
+
+@media only screen and (min-width: 768px) {
+  .copyright {
+    // width: 30%;
+    align-items: flex-start;
+  }
+
+  .copyright__text {
+    margin-top: 20px;
+  }
 }
