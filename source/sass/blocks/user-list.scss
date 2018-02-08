@@ -31,12 +31,12 @@
 
   .user-list__item {
     border-bottom: none;
-    border-left: 1px solid rgb(236, 236, 236);
+    border-left: 1px solid rgb(231, 231, 231);
+    height: 88px;
   }
 
   .user-list__item a {
     padding-left: 30px;
-    padding-top: 30px;
   }
 
   .user-list__item--cart a {
@@ -45,7 +45,7 @@
 
   .user-list__item--search a {
     width: 80px;
-    text-indent: -9999px;
+    font-size: 0;
   }
 
   .user-list__item a::after {

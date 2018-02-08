@@ -1,5 +1,9 @@
 .page-footer {
-  height: 160px;
+  min-height: 160px;
+  background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
   width: 81.25%;
   margin: 0 auto;
 }
@@ -13,7 +17,7 @@
 }
 
 .page-footer__social {
-  height: 80px;
+  min-height: 80px;
 }
 
 .page-footer__copyright {
@@ -22,31 +26,43 @@
 
 @media only screen and (min-width: 768px) {
   .page-footer {
+    min-height: 143px;
+  }
+
+  .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    height: 143px;
     width: 87%;
+    margin: 0 auto;
+    align-items: center;
   }
 
   .page-footer__logo {
-    display: flex;
-    align-items: flex-start;
-    width: 17%;
-    padding-right: 20px;
-    // margin-top: -10px;
+    flex: 0 0 33.33%;
+    display: block;
+    width: 102px;
+    height: 34px;
+    margin-top: 17px;
   }
 
   .page-footer__social {
     height: auto;
+    flex: 0 0 33.33%;
+    justify-content: flex-start;
+    margin-top: 22px;
+    padding-bottom: 0;
+    border: 0;
   }
 
   .page-footer__copyright {
     height: auto;
+    flex: 0 0 33.33%;
+    padding-top: 22px;
   }
 }
 
 @media only screen and (min-width: 1150px) {
-  .page-footer {
+  .page-footer__wrapper {
     width: 91.3%;
   }
 }

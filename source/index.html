@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no"/>
 
     <title>магазин товаров ручной работы "Mishka"</title>
 
@@ -13,17 +14,15 @@
 
     <header class="page-header">
 
-      <a class="page-header__logo">
-        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
-      </a>
-
       <nav class="main-nav">
+
+        <a class="page-header__logo">
+          <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+        </a>
 
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть/Закрыть меню</span>
         </button>
-
-        <div class="main-nav__wrapper">
 
         <ul class="main-nav__list header-list">
           <li class="header-list__item"><a href="catalog.html">Каталог товаров</a></li>
@@ -41,8 +40,6 @@
         </ul>
 
         <p class="main-nav__sub-text">Бесплатная доставка по России</p>
-
-        </div>
 
       </nav>
 
@@ -82,15 +79,15 @@
           <p class="offer__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
           <table class="offer__list">
-            <tr>
+            <tr class="offer__parametrs">
               <td class="offer__key">Цвет:</td>
               <td class="offer__value">«Тиффани»/серый</td>
             </tr>
-            <tr>
+            <tr class="offer__parametrs">
               <td class="offer__key" style="height: 40px">Диаметр:</td>
               <td class="offer__value">25 см</td>
             </tr>
-            <tr>
+            <tr class="offer__parametrs">
               <td class="offer__key">Высота:</td>
               <td class="offer__value">15 см</td>
             </tr>
@@ -181,27 +178,32 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo" href="#">
-          <img class="page-footer__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
-      </a>
 
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy" target="_blank">Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">Мы в Твитере</a>
-          </li>
-        </ul>
-      </div>
+      <div class="page-footer__wrapper">
 
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link button--link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+        <a class="page-footer__logo" href="#">
+            <img class="page-footer__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+        </a>
+
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy" target="_blank">Мы в Инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">Мы в Твитере</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link button--link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+        </div>
+
       </div>
     </footer>
 

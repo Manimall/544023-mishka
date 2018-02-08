@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .copyright__text {
@@ -20,8 +19,7 @@
 
 @media only screen and (min-width: 768px) {
   .copyright {
-    // width: 30%;
-    align-items: flex-start;
+    justify-content: flex-end;
   }
 
   .copyright__text {
