@@ -1,0 +1,29 @@
+.goods-list {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  //
+}
+
+@media (min-width: 1150px) {
+  .goods-list {
+    display: flex;
+    width: auto;
+
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+
+    order: 3;
+  }
+
+  .goods-list__item a {
+    padding-right: 60px;
+
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+}

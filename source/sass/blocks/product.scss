@@ -6,22 +6,169 @@
   // Comment
 }
 
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+}
+
 .product__title {
   font-size: 17px;
   color: $h-color;
   font-weight: $bold;
+
+  width: 78.5%;
+  margin: 30px auto 20px;
 }
 
 .product__data {
   font-size: 13px;
   line-height: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+
+  width: 78.5%;
+  margin: 0 auto;
+}
+
+.product__to-order {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product__price {
   color: $h-color;
   font-weight: $bold;
+
+  margin-left: 28px;
+  margin-top: 28px;
+  margin-bottom: 33px;
 }
 
 .product__cart {
-  // Comment
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+
+  align-self: center;
+
+  margin-right: 27px;
+
+  font-size: 0;
+
+  background-image: url("../img/icon-cart.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+@media (min-width: 768px) {
+  .product {
+    margin-bottom: 55px;
+    display: flex;
+  }
+
+  .product__info {
+    width: 50%;
+    margin-left: auto;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .product__title {
+    font-size: 20px;
+    margin-top: 24px;
+    padding-right: 25px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .product__data {
+    font-size: 15px;
+    border: none;
+  }
+
+  .product__img {
+    min-width: 334px;
+    width: 50%;
+  }
+
+  .product__to-order {
+    margin: auto auto 0;
+    width: 80.84%;
+    border-top: 1px solid #ececec;
+  }
+
+  .product__price {
+    margin-bottom: 27px;
+    margin-left: 0;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .product__cart {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .product {
+    flex-direction: column;
+    margin-bottom: 0;
+
+    width: 316px;
+    min-height: 659px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .product__info {
+    width: 100%;
+    padding: 0 30px 0 25px;
+    min-height: 197px;
+  }
+
+  .product__title {
+    padding-right: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .product__data {
+    width: 100%;
+  }
+
+  .product__img {
+    width: 316px;
+    height: 462px;
+  }
+
+  .product__to-order {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    height: 75px;
+
+    align-items: center;
+  }
+
+  .product__price {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }

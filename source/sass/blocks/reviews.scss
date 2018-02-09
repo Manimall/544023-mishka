@@ -1,5 +1,6 @@
 .reviews {
-  // Comment
+  width: 81.25%;
+  margin: 20px auto 45px;
 }
 
 .reviews__title {
@@ -7,18 +8,21 @@
   line-height: 30px;
   color: $h-color;
   font-weight: $bold;
+  margin-bottom: 30px;
 }
 
 .reviews__list {
-  // Comment
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__item {
-  // Comment
+  margin: 0;
 }
 
 .reviews__text {
   line-height: 30px;
+  margin-top: 0;
 }
 
 .reviews__author-name {
@@ -33,7 +37,9 @@
 }
 
 .reviews__buttons {
-  // Comment
+  margin: 35px auto;
+  max-width: 295px;
+  min-width: 260px;
 }
 
 .reviews__prev {
@@ -49,4 +55,77 @@
   line-height: 20px;
   font-weight: $bold;
   text-transform: uppercase;
+  width: 81.25%;
+  margin: 0 auto;
+  max-width: 295px;
+  min-width: 260px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews {
+    width: 87%;
+    margin: 0 auto;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    min-height: 457px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    order: -1;
+    margin-top: 10px;
+    flex-grow: 1;
+  }
+
+  .reviews__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .reviews__text {
+    padding-right: 20px;
+    margin-bottom: 70px;
+  }
+
+  .reviews__write {
+    margin-right: 0;
+    margin-top: -80px;
+    font-size: 18px;
+    line-height: 20px;
+    order: -2;
+    height: 58px;
+    width: 175px;
+    margin-bottom: 50px;
+    min-width: 175px;
+  }
+
+  .reviews__author-name {
+    margin-bottom: 7px;
+  }
+
+  .reviews__buttons {
+    margin-right: 0;
+    margin-top: -30px;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .reviews {
+    width: 91.3%;
+    margin: 0 auto;
+    padding-left: 175px;
+    margin-bottom: 67px;
+  }
 }

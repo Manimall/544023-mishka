@@ -1,11 +1,32 @@
-.page-header {
-  // Comment
-}
-
 .page-header__logo {
-  // Comment
+  align-self: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.page-header__logo-img {
-  // Comment
+.page-header__logo:hover,
+.page-header__logo:focus {
+  opacity: 0.6;
+  cursor: pointer;
+  outline: none;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    order: 0;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header__logo {
+    order: 1;
+    padding-top: 9px;
+    padding-bottom: 0;
+  }
 }

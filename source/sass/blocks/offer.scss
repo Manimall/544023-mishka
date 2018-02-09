@@ -1,9 +1,13 @@
 .offer {
-  // Comment
+  display: flex;
+  flex-direction: column;
+  width: 81.25%;
+  margin: 0 auto;
+  position: relative;
 }
 
 .offer__header {
-  // Comment
+  //
 }
 
 .offer__title {
@@ -20,32 +24,49 @@
   font-weight: bold;
   color: $green-accent;
   text-transform: uppercase;
-  margin-top: 0;
 }
 
 .offer__description {
-  // Comment
+  margin-bottom: 16px;
 }
 
 .offer__list {
-  // Comment
+  box-sizing: content-box;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.offer__parametrs {
+  border-bottom: 1px solid #ececec;
 }
 
 .offer__key {
-  line-height: 20;
+  height: 40px;
+  line-height: 20px;
+  width: 38.46%;
 }
 
 .offer__value {
-  line-height: 20;
+  height: 40px;
+  line-height: 20px;
 }
 
 .offer__img {
-  // Comment
+  margin: 0 auto;
+  min-height: 315px;
+}
+
+.offer__buy-info {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .offer__price {
   font-size: 15px;
   font-weight: $bold;
+  margin: $gutter auto;
 }
 
 .offer__order {
@@ -53,4 +74,146 @@
   line-height: 20px;
   font-weight: $bold;
   text-transform: uppercase;
+  margin-bottom: 40px;
+  max-width: 295px;
+  min-width: 260px;
+}
+
+@media (min-width: 768px) {
+  .offer {
+    width: 87%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 47px;
+    margin-bottom: 68px;
+  }
+
+  .offer__header {
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 57px;
+  }
+
+  .offer__title {
+    flex-grow: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .offer__product-week {
+    width: 120px;
+    text-align: center;
+    margin-right: 26px;
+    line-height: 1;
+    margin-top: 5px;
+  }
+
+  .offer__content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 6.287%;
+    width: 43.71%;
+  }
+
+
+  .offer__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: -8px;
+    margin-bottom: 35px;
+  }
+
+  .offer__key {
+    width: 33.37%;
+  }
+
+  .offer__img {
+    width: 50%;
+    margin-bottom: 0;
+    min-width: 334px;
+    min-height: 636px;
+  }
+
+  .offer__buy-info {
+    width: 100%;
+    margin-top: -130px;
+    margin-left: 50px;
+  }
+
+  .offer__price {
+    width: 70%;
+  }
+
+  .offer__order {
+    max-width: 290px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .offer {
+    width: 91%;
+    margin: 70px auto;
+    padding-top: 55px;
+    padding-bottom: 96px;
+  }
+
+  .offer__header,
+  .offer__content,
+  .offer__buy-info {
+    padding-left: 175px;
+  }
+
+  .offer__header {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 0;
+  }
+
+  .offer__title {
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 1;
+    margin-top: 0;
+  }
+
+  .offer__product-week {
+    text-align: center;
+    width: 177px;
+    padding: 7px 40px;
+    padding-right: 15px;
+    position: absolute;
+    margin: 0;
+  }
+
+  .offer__content {
+    margin-right: 5%;
+    width: 44.7%;
+  }
+
+  .offer__description {
+    margin-bottom: 47px;
+  }
+
+  .offer__img {
+    min-width: 525px;
+    margin-top: -163px;
+    width: 50%;
+    z-index: -1;
+  }
+
+  .offer__buy-info {
+    margin-left: 0;
+  }
+
+  .offer__price {
+    width: 83%;
+    font-size: 20px;
+    margin-top: 15px;
+  }
 }

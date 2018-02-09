@@ -3,7 +3,9 @@
 }
 
 .knitting__heading {
-  // Comment
+  min-height: 177px;
+  background-color: rgb(241, 241, 241);
+  text-align: center;
 }
 
 .knitting__title {
@@ -12,8 +14,34 @@
   color: $h-color;
   font-weight: $bold;
   text-align: center;
+  margin: 0;
+  padding-top: 70px;
 }
 
-.knitting__form {
-  // Comment
+@media (min-width: 768px) {
+  .knitting__heading {
+    margin-top: -54px;
+    margin-bottom: 0;
+    border-top: 1px solid rgb(236, 236, 236);
+    min-height: 237px;
+  }
+
+  .knitting__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 92px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .knitting__heading {
+    min-height: 272px;
+    margin-top: -45px;
+    background-size: auto 34px;
+  }
+
+  .knitting__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

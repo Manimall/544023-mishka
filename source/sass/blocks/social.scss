@@ -1,9 +1,14 @@
 .social {
-  // Comment
+  //
 }
 
 .social__list {
-  // Comment
+  min-height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .social__item {
@@ -22,5 +27,25 @@
 
   &--twitter {
     // Comment
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .social {
+    // width: 40%;
+  }
+
+  .social__list {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .social__item {
+    padding-right: 30px;
+  }
+
+  .social__link {
+    //
   }
 }
