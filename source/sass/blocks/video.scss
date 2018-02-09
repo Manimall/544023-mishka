@@ -127,7 +127,7 @@
 
   .video__header {
     width: 87.5%; // 584px
-    width: 584px;
+    max-width: 584px;
   }
 
   .video__header::after {
@@ -147,7 +147,7 @@
     margin-top: 10px;
     width: 87.5%;
     padding-right: 0;
-    width: 584px;
+    max-width: 584px;
   }
 }
 

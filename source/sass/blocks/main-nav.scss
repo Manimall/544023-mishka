@@ -46,13 +46,12 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       top: 88px;
       width: 100%;
       border-bottom: 1px solid rgb(231, 231, 231);
-
     }
   }
 

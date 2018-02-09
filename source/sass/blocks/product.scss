@@ -68,12 +68,14 @@
     display: flex;
   }
 
-   .product__info {
+  .product__info {
     width: 50%;
     margin-left: auto;
+
     &:hover {
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     }
+
     &:active {
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
@@ -83,11 +85,13 @@
     font-size: 20px;
     margin-top: 24px;
     padding-right: 25px;
+
     &:hover {
       opacity: 0.6;
     }
+
     &:active {
-    opacity: 0.3;
+      opacity: 0.3;
     }
   }
 
@@ -97,7 +101,7 @@
   }
 
   .product__img {
-    width: 334px;
+    min-width: 334px;
     width: 50%;
   }
 

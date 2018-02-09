@@ -39,8 +39,10 @@
   display: block;
   min-height: 102px;
   padding: $gutter;
+
   &--lighter {
     background-color: $green-accent;
+
     &::after {
       content: "";
       width: 40px;
@@ -54,8 +56,10 @@
       opacity: 0.5;
     }
   }
+
   &--darker {
     background-color: $green-dark;
+
     &::after {
       content: " ";
       width: 60px;
@@ -66,24 +70,24 @@
       right: 27px;
 
       background-image: url("../img/icon-toy.svg");
-      opacity: 0.5
+      opacity: 0.5;
     }
   }
 }
 
 @media (min-width: 768px) {
   .hero {
+    margin: 0 auto;
     position: relative;
     margin-top: -57px;
     width: 87%;
-    margin: 0 auto;
   }
 
   .hero__header {
     min-height: 625px;
   }
 
-  .hero__title  {
+  .hero__title {
     padding: 153px 50px 0;
     font-size: 43px;
     line-height: 50px;
@@ -126,4 +130,3 @@
     opacity: 0.3;
   }
 }
-
