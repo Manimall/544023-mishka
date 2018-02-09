@@ -1,161 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/style.css" rel="stylesheet">
+  <meta name="format-detection" content="telephone=no"/>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
+  <title>Mishka/Order-Form</title>
 
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-        }
-      });
-  </script>
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
-  <header class="page-header">
-    <a href="" class="page-header-logo">
-      <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
-    </a>
+ <header class="page-header">
 
     <nav class="main-nav">
+
+      <a class="page-header__logo">
+        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+      </a>
+
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть/Закрыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item site-list__item--search">
-            <a class="site-list__link" href="search.html">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item site-list__item--cart">
-            <a class="site-list__link" href="cart.html">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </div>
+
+      <ul class="main-nav__list header-list">
+        <li class="header-list__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="header-list__item"><a href="form.html">Вязание на заказ</a></li>
+      </ul>
+
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item user-list__item--search"><a href="#">Поиск по сайту</a></li>
+        <li class="user-list__item user-list__item--cart"><a href="#">Корзина: пока пуста</a></li>
+      </ul>
+
+      <ul class="main-nav__list goods-list">
+        <li class="goods-list__item"><a href="#">Новые поступления</a></li>
+        <li class="goods-list__item"><a href="#">Распродажа</a></li>
+      </ul>
+
+      <p class="main-nav__sub-text">Бесплатная доставка по России</p>
+
     </nav>
+
   </header>
 
-
   <main class="page-main">
+
     <section class="knitting">
+
       <div class="knitting__heading">
         <h1 class="knitting__title">Вязание на заказ</h1>
       </div>
+
       <form class="knitting__form form" action="https://echo.htmlacademy.ru" method="post">
+
         <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-        <fieldset class="form__group">
-          <legend class="form__title">Тип</legend>
-            <p>
-              <label for="accessory">
-                <input type="radio" name="type-of-order" id="accessory" value="a" checked>Аксессуар для интерьера
+        <fieldset class="form__wrapper">
+          <div class="form__container">
+            <legend class="form__title">Тип</legend>
+            <div class="form__group">
+              <label class="form__label form__label--ticks">
+                <input type="radio" name="type" value="accessory" class="visually-hidden" checked>
+                <span class="form__radio"></span>
+                Аксессуар для интерьера
               </label>
-            </p>
-            <p>
-              <label for="toy">
-                <input type="radio" name="type-of-order" id="toy" value="t">Детская игрушка
+              <label class="form__label form__label--ticks">
+                <input type="radio" name="type" value="toy" class="visually-hidden">
+                <span class="form__radio"></span>
+                Детская игрушка
               </label>
-            </p>
+            </div>
+          </div>
         </fieldset>
 
-        <fieldset class="form__group">
-          <legend class="form__title">Цвет</legend>
-            <p>
-              <label for="white">
-                <input type="checkbox" name="white" id="white" value="Белый" checked>Белый
+        <fieldset class="form__wrapper">
+          <div class="form__container">
+            <legend class="form__title">Цвет</legend>
+            <div class="form__group form__group--checkbox">
+              <label class="form__label form__label--ticks">
+                <input type="checkbox" name="white" value="white" class="visually-hidden" checked>
+                <span class="form__checkbox"></span>
+                Белый
               </label>
-            </p>
-
-            <p>
-              <label for="gray">
-                <input type="checkbox" name="gray" id="gray" value="Серый" checked>Серый
+              <label class="form__label form__label--ticks">
+                <input type="checkbox" name="gray" value="gray" class="visually-hidden" checked>
+                <span class="form__checkbox"></span>
+                Серый
               </label>
-            </p>
-
-            <p>
-              <label for="tiffany">
-                <input type="checkbox" name="tiffany" id="tiffany" value="Тиффани">"Тиффани"
+              <label class="form__label form__label--ticks">
+                <input type="checkbox" name="tiffany" value="tiffany" class="visually-hidden">
+                <span class="form__checkbox"></span>
+                «Тиффани»
               </label>
-            </p>
-
-            <p>
-              <label for="black">
-                <input type="checkbox" name="black" id="black" value="Черный">Черный
+              <label class="form__label form__label--ticks">
+                <input type="checkbox" name="black" value="black" class="visually-hidden">
+                <span class="form__checkbox"></span>
+                Черный
               </label>
-            </p>
-
-            <p>
-              <label for="pink">
-                <input type="checkbox" name="pink" id="pink" value="Розовый">Розовый
+              <label class="form__label form__label--ticks">
+                <input type="checkbox" name="pink" value="pink" class="visually-hidden">
+                <span class="form__checkbox"></span>
+                Розовый
               </label>
-            </p>
-
-            <p>
-              <label for="orange">
-                <input type="checkbox" name="orange" id="orange" value="Оранжевый">Оранжевый
+              <label class="form__label form__label--ticks">
+                <input type="checkbox" name="orange" value="orange" class="visually-hidden">
+                <span class="form__checkbox"></span>
+                Оранжевый
               </label>
-            </p>
+            </div>
+          </div>
         </fieldset>
 
-        <fieldset class="form__group">
-          <legend class="form__title">ФИО</legend>
-            <p><label for="name">Имя:</label></p>
-            <p><input type="text" id="name" name="name" value="" placeholder="Введите ваше имя*" required></p>
+        <fieldset class="form__wrapper form__wrapper--personal">
+          <div class="form__container">
 
-            <p><label for="surname">Фамилия:</label></p>
-            <p><input type="text" id="surname" name="surname" value="" placeholder="Укажите фамилию*" required></p>
+            <legend class="form__title">ФИО</legend>
 
-            <p><label for="patronymic">Отчество:</label></p>
-            <p><input type="text" id="patronymic" name="patronymic" value="" placeholder="Отчество, если желаете"></p>
+            <div class="form__group form__group--personal">
+
+            <label class="form__label">
+              <span class="form__personal">Имя:</span>
+              <input class="form__text" type="text" name="auth-name" placeholder="Введите ваше имя*" required>
+            </label>
+
+            <label class="form__label">
+              <span class="form__personal">Фамилия:</span>
+              <input class="form__text" type="text" name="auth-surname" placeholder="Укажите фамилию*" required>
+            </label>
+
+            <label class="form__label">
+              <span class="form__personal">Отчество:</span>
+              <input class="form__text" type="text" name="auth-fathers-name" placeholder="Отчество, если желаете">
+            </label>
+            </div>
+
+          </div>
         </fieldset>
 
-        <fieldset class="form_group">
-          <legend class="form__title"><label for="tel">Тел</label></legend>
-          <p><input type="tel" name="tel" id="tel" pattern="\+7\ [0-9]{3}\ [0-9]{2}\ [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required></p>
-        </fieldset>
-
-        <fieldset class="form__tgroup">
-          <legend class="form__title"><label for="email">E-mail</label></legend>
-          <p><input type="email" name="email" id="email" placeholder="Ваш Email*" required></p>
-        </fieldset>
-
-        <fieldset class="form__group">
-          <legend class="form__title"><label for="wishes">Доп</label></legend>
-          <p><textarea name="wishes" id="wishes" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea></p>
-        </fieldset>
-
-        <div class="form__hint">
-          <p class="form__hint-text">*Поля обязательны для заполнения</p>
+        <div class="form__wrapper form__wrapper--no-legend form__wrapper--phone">
+          <label class="form__title form__title--line" for="user-phone">Тел</label>
+          <input class="form__text" id="user-phone" type="text" placeholder="+7 XXX XX XX*" pattern="\+7\ [0-9]{3}\ [0-9]{2}\ [0-9]{2}" required>
         </div>
 
-        <button class="form__button button" type="submit">Отправить заказ</button>
+        <div class="form__wrapper form__wrapper--no-legend form__wrapper--email">
+          <label class="form__title form__title--line" for="user-email">E-mail</label>
+          <input class="form__text" id="user-email" type="text" placeholder="Ваш Email*" required>
+        </div>
+
+        <div class="form__wrapper form__wrapper--textarea">
+          <label class="form__title form__title--line" for="u-message">Доп</label>
+          <textarea class="form__textarea" id="u-message" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+
+        <div class="form__wrapper form__wrapper--finish-line">
+          <small class="form__warning">
+            *Поля обязательны для заполнения
+          </small>
+
+          <button class="form__button button" type="submit">Отправить заказ</button>
+        </div>
 
       </form>
     </section>
   </main>
 
-    <footer class="page-footer">
+  <footer class="page-footer">
+
+    <div class="page-footer__wrapper">
+
+      <a class="page-footer__logo" href="#">
+          <img class="page-footer__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+      </a>
+
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -171,10 +190,14 @@
       </div>
 
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link button" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link button--link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
       </div>
-    </footer>
+
+    </div>
+  </footer>
+
+  <script src="js/button__toggle.js"></script>
 
 </body>
 </html>
