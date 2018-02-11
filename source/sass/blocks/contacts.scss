@@ -159,7 +159,7 @@
 
   .contacts__map {
     position: absolute;
-    width: 525px;
+    max-width: 525px;
     top: -50px;
     right: 0;
     z-index: -1;
