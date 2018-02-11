@@ -3,8 +3,9 @@
   flex-direction: column;
 
   border: 1px solid rgb(237, 237, 237);
-  margin: 0 auto;
-  width: 81.25%; // 260px
+  @include centerer();
+  // margin: 0 auto;
+  // width: 81.25%; // 260px
   margin-bottom: 58px;
 }
 
@@ -108,7 +109,7 @@
 
 @media (min-width: 768px) {
   .video {
-    width: 87%;
+    // width: 87%;
     margin-bottom: 62px;
   }
 
@@ -153,8 +154,8 @@
 
 @media (min-width: 1150px) {
   .video {
-    width: 1050px;
-    margin: 0 auto;
+    // width: 1050px;
+    // margin: 0 auto;
     margin-top: 57px;
     margin-bottom: 105px;
     min-height: 455px;

@@ -5,8 +5,9 @@
 }
 
 .hero__header {
-  width: 81.25%;
-  margin: 0 auto;
+  // width: 81.25%;
+  // margin: 0 auto;
+  @include centerer();
   min-height: 283px;
 }
 
@@ -95,10 +96,11 @@
 
 @media (min-width: 768px) {
   .hero {
-    margin: 0 auto;
+    @include centerer();
+    // margin: 0 auto;
     position: relative;
     margin-top: -63px;
-    width: 87%;
+    // width: 87%;
   }
 
   .hero__header {
@@ -136,7 +138,7 @@
 
 @media (min-width: 1150px) {
   .hero {
-    width: 1050px;
+    // width: 1050px;
     margin-top: -45px;
   }
 }

@@ -1,0 +1,17 @@
+@mixin centerer() {
+  width: $width-container--mobile;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $width-container--tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $width-container--desktop;
+  }
+}
+
+@mixin centerer-product() {
+  width: 78.5%;
+  margin: 0 auto;
+}

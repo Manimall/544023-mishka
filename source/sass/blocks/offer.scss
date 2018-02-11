@@ -1,13 +1,11 @@
 .offer {
   display: flex;
   flex-direction: column;
-  width: 81.25%;
-  margin: 0 auto;
+  // width: 81.25%;
+  // margin: 0 auto;
   position: relative;
-}
-
-.offer__header {
-  //
+  @include centerer();
+  margin-top: 20px;
 }
 
 .offer__title {
@@ -81,7 +79,7 @@
 
 @media (min-width: 768px) {
   .offer {
-    width: 87%;
+    // width: 87%;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 47px;
@@ -141,7 +139,7 @@
 
   .offer__buy-info {
     width: 100%;
-    margin-top: -140px;
+    margin-top: -143px;
   }
 
   .offer__price {
@@ -159,7 +157,7 @@
 
 @media (min-width: 1150px) {
   .offer {
-    width: 1050px;
+    // width: 1050px;
     margin: 70px auto;
     padding-top: 55px;
     padding-bottom: 96px;

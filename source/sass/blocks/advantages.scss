@@ -1,5 +1,6 @@
 .advantages {
-  width: 81.25%;
+  @include centerer();
+  // width: 81.25%;
   margin: 32px auto 50px;
 }
 
@@ -31,7 +32,7 @@
 
 @media only screen and (min-width: 768px) {
   .advantages {
-    width: 87%;
+    width: 668px;
     margin: 58px auto;
   }
 
@@ -76,7 +77,7 @@
 
 @media only screen and (min-width: 1150px) {
   .advantages {
-    width: 700px;
+    // width: 700px;
     margin: 65px auto 80px;
   }
 
