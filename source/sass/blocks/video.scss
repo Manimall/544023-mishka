@@ -3,6 +3,7 @@
   flex-direction: column;
 
   border: 1px solid rgb(237, 237, 237);
+
   @include centerer();
   // margin: 0 auto;
   // width: 81.25%; // 260px
