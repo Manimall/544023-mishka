@@ -63,6 +63,12 @@
 
 @media only screen and (min-width: 1150px) {
   .page-footer__wrapper {
-    width: 91.3%;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .page-footer {
+    max-width: 1150px;
+    margin: 0 auto;
   }
 }

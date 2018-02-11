@@ -6,6 +6,7 @@
   min-height: 177px;
   background-color: rgb(241, 241, 241);
   text-align: center;
+  margin: 0 auto;
 }
 
 .knitting__title {
@@ -14,7 +15,7 @@
   color: $h-color;
   font-weight: $bold;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 70px;
 }
 
@@ -35,12 +36,14 @@
 
 @media (min-width: 1150px) {
   .knitting__heading {
+    width: 1150px;
     min-height: 272px;
     margin-top: -45px;
     background-size: auto 34px;
   }
 
   .knitting__title {
+    max-width: 800px;
     font-size: 53px;
     line-height: 57px;
   }

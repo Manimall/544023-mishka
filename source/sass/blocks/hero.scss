@@ -97,7 +97,7 @@
   .hero {
     margin: 0 auto;
     position: relative;
-    margin-top: -57px;
+    margin-top: -63px;
     width: 87%;
   }
 
@@ -131,5 +131,12 @@
       transform: scaleY(1.05);
       padding: 23px 30px 33px 35px;
     }
+  }
+}
+
+@media (min-width: 1150px) {
+  .hero {
+    width: 1050px;
+    margin-top: -45px;
   }
 }

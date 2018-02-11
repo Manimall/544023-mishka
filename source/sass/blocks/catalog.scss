@@ -63,7 +63,7 @@
 
 @media (min-width: 1150px) {
   .catalog__list {
-    width: 91%;
+    width: 1050px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -73,8 +73,13 @@
   }
 
   .catalog__title {
-    width: 91%;
+    max-width: 800px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .catalog__heading {
+    max-width: 1150px;
+    margin: 0 auto;
   }
 }

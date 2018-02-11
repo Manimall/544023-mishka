@@ -478,6 +478,11 @@ input {
 }
 
 @media (min-width: 1150px) {
+  .form {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
   .form__wrapper {
     justify-content: flex-start;
   }

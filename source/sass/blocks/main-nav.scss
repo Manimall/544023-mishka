@@ -76,8 +76,15 @@
 
 @media (min-width: 1150px) {
   .main-nav {
-    padding: 0 50px;
+    width: 1050px;
+    padding: 0;
+    margin: 0 auto;
     justify-content: space-between;
+  }
+
+  .main-nav::after {
+    width: 1150px;
+    left: -50px;
   }
 
   .main-nav__sub-text {
