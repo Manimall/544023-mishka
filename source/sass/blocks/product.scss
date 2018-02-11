@@ -17,7 +17,8 @@
   color: $h-color;
   font-weight: $bold;
 
-  width: 78.5%;
+  @include centerer-product();
+  // width: 78.5%;
   margin: 30px auto 20px;
 }
 
@@ -27,8 +28,9 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #ececec;
 
-  width: 78.5%;
-  margin: 0 auto;
+  @include centerer-product();
+  // width: 78.5%;
+  // margin: 0 auto;
 }
 
 .product__to-order {
@@ -153,7 +155,7 @@
   }
 
   .product__img {
-    width: 316px;
+    min-width: 316px;
     height: 462px;
   }
 

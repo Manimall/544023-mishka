@@ -1,13 +1,12 @@
 .offer {
   display: flex;
   flex-direction: column;
-  width: 81.25%;
-  margin: 0 auto;
+  // width: 81.25%;
+  // margin: 0 auto;
   position: relative;
-}
 
-.offer__header {
-  //
+  @include centerer();
+  margin-top: 20px;
 }
 
 .offer__title {
@@ -81,7 +80,7 @@
 
 @media (min-width: 768px) {
   .offer {
-    width: 87%;
+    // width: 87%;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 47px;
@@ -141,12 +140,15 @@
 
   .offer__buy-info {
     width: 100%;
-    margin-top: -130px;
-    margin-left: 50px;
+    margin-top: -143px;
   }
 
   .offer__price {
-    width: 70%;
+    width: 43.71%;
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+    max-width: 290px;
   }
 
   .offer__order {
@@ -156,7 +158,7 @@
 
 @media (min-width: 1150px) {
   .offer {
-    width: 91%;
+    // width: 1050px;
     margin: 70px auto;
     padding-top: 55px;
     padding-bottom: 96px;
@@ -175,7 +177,7 @@
   }
 
   .offer__title {
-    padding-left: 175px;
+    padding-left: 169px;
     font-size: 53px;
     line-height: 57px;
     z-index: 1;
@@ -191,6 +193,10 @@
     margin: 0;
   }
 
+  .offer__list {
+    margin-bottom: 0;
+  }
+
   .offer__content {
     margin-right: 5%;
     width: 44.7%;
@@ -201,7 +207,7 @@
   }
 
   .offer__img {
-    min-width: 525px;
+    max-width: 525px;
     margin-top: -163px;
     width: 50%;
     z-index: -1;
@@ -209,11 +215,11 @@
 
   .offer__buy-info {
     margin-left: 0;
+    margin-top: -147px;
   }
 
   .offer__price {
-    width: 83%;
     font-size: 20px;
-    margin-top: 15px;
+    padding-bottom: 35px;
   }
 }
