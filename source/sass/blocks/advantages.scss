@@ -7,6 +7,7 @@
 .advantages__title {
   font-size: 25px;
   line-height: 30px;
+  margin-top: 35px;
   color: $h-color;
   font-weight: $bold;
 }
@@ -78,11 +79,12 @@
 @media only screen and (min-width: 1150px) {
   .advantages {
     // width: 700px;
-    margin: 65px auto 80px;
+    margin: 68px + 23px auto 60px;
   }
 
   .advantages__title {
     font-size: 53px;
     line-height: 57px;
+    margin-top: 0;
   }
 }

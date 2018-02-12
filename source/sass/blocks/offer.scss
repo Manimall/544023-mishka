@@ -7,6 +7,18 @@
 
   @include centerer();
   margin-top: 20px;
+
+  &::after {
+    @include pseudo-element();
+    top: 100%;
+    left: -15%;
+    width: 130%;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat-x: repeat;
+    background-size: 320px 7px;
+    background-position: 8px 0;
+  }
 }
 
 .offer__title {
@@ -84,7 +96,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 47px;
-    margin-bottom: 68px;
+    // margin-bottom: 68px;
+    padding-bottom: 55px;
+
+    &::after {
+      height: 17px;
+      width: 120%;
+      left: -10%;
+      background-size: 768px 17px;
+      background-position: -7px 0;
+    }
   }
 
   .offer__header {
@@ -153,15 +174,24 @@
 
   .offer__order {
     max-width: 290px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 1150px) {
   .offer {
     // width: 1050px;
-    margin: 70px auto;
+    margin: 70px auto 0;
     padding-top: 55px;
-    padding-bottom: 96px;
+    padding-bottom: 74px;
+
+    &::after {
+      left: 0;
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px 23px;
+      background-position: 24px 0;
+    }
   }
 
   .offer__header,

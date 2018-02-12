@@ -1,5 +1,5 @@
 .contacts {
-  margin-top: 45px;
+  margin-top: 52px;
   margin-bottom: 40px;
 }
 
@@ -12,6 +12,7 @@
   line-height: 30px;
   color: $h-color;
   font-weight: bold;
+  position: relative;
 }
 
 .contacts__list {
@@ -39,7 +40,8 @@
 }
 
 .contacts__mailto {
-  border-bottom: 2px solid $green-accent;
+  border-bottom: 1px solid $green-accent;
+  padding-bottom: 3px;
 }
 
 .contacts__map {
@@ -74,16 +76,25 @@
 
 @media only screen and (min-width: 768px) {
   .contacts {
-    margin-top: 70px;
+    margin-top: 70px + 17px;
     margin-bottom: 60px;
   }
 
   .contacts__title {
     // width: 87%;
-    margin-left: 50px;
+    // margin-left: 50px;
     margin-bottom: 65px;
     font-size: 43px;
     line-height: 50px;
+
+    &::before {
+      @include pseudo-element();
+      top: -23px;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+    }
   }
 
   .contacts__list {
@@ -119,8 +130,8 @@
   .contacts {
     width: 1050px;
     margin: 0 auto;
-    margin-top: 150px;
-    margin-bottom: 107px;
+    margin-top: 150px + 23px;
+    margin-bottom: 66px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -132,6 +143,11 @@
     margin-bottom: 60px;
     font-size: 53px;
     line-height: 57px;
+
+    &::before {
+      top: -10px;
+      left: -112px; // 65px + 47px
+    }
   }
 
   .contacts__list {
