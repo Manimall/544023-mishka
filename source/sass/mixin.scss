@@ -15,3 +15,9 @@
   width: 78.5%;
   margin: 0 auto;
 }
+
+@mixin pseudo-element($content: "", $pos: absolute, $display: block) {
+  content: $content;
+  position: $pos;
+  display: $display;
+}

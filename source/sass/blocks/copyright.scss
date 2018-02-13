@@ -1,6 +1,6 @@
 .copyright {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -14,15 +14,44 @@
 }
 
 .copyright__link {
-  // Comment
+  position: relative;
+  font-size: 0;
+
+  &::after {
+    @include pseudo-element;
+    background-image: url("../img/logo-htmlacademy.svg");
+    left: 0;
+    top: -3px;
+    width: 27px;
+    height: 35px;
+    background-repeat: no-repeat;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .copyright {
-    justify-content: flex-end;
+    // justify-content: flex-end;
+  }
+
+  .copyright__link {
+    margin-right: -20px;
   }
 
   .copyright__text {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .copyright {
+    justify-content: flex-end;
+  }
+
+  .copyright__link {
+    margin-right: 27px;
+  }
+
+  .copyright__text {
+    padding-right: 30px;
   }
 }

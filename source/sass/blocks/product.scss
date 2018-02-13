@@ -2,14 +2,10 @@
   // Comment
 }
 
-.product__img {
-  // Comment
-}
-
-
 .product__info {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .product__title {
@@ -62,6 +58,15 @@
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.2;
+}
+
+.product__img {
+  flex-grow: 1;
+}
+
+.product__img img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -157,6 +162,10 @@
   .product__img {
     min-width: 316px;
     height: 462px;
+  }
+
+  .product__img img {
+    height: auto;
   }
 
   .product__to-order {

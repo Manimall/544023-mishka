@@ -1,14 +1,26 @@
+// Основные цвета в макете
 $green-accent: #63d1bb;
 $green-dark: #56c3b2;
 $plholder-color: #c7c7c7;
 $h-color: #000000;
+$main-color: #444444;
 
+// Вес шрифта
 $bold: 700;
 $normal: 400;
+
+// Часто используемый размер отступа
 $gutter: 30px;
 
-$width-container--mobile: 81.25%;
-$width-container--tablet: 87%;
+// Брейкпоинты
 $tablet-width: 768px;
 $desktop-width: 1150px;
+
+// Проценты для резины под разные размеры экранов
+$width-container--mobile: 81.25%;
+$width-container--tablet: 87%;
 $width-container--desktop: 1050px;
+
+// Плотность пикселей
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
