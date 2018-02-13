@@ -17,7 +17,11 @@
       <nav class="main-nav">
 
         <a class="page-header__logo" href="#">
-          <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка"/>
+          </picture>
         </a>
 
         <button class="main-nav__toggle" type="button">
@@ -94,7 +98,15 @@
           </table>
         </div>
 
-        <img class="offer__img" src="img/triple-set-mobile@1x.jpg" width="315" height="260" alt="Вязаные корзинки">
+        <picture>
+          <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/triple-set-mobile.webp 1x, img/triple-set-mobile@2x.webp 2x"> -->
+
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="offer__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Двухцветные вязанные корзинки"/>
+        </picture>
 
         <div class="offer__buy-info">
           <b class="offer__price">Цена: 990 руб.</b>
@@ -105,22 +117,22 @@
       <section class="advantages">
         <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--icon-flower">
             <p class="advantages__text">Экологически чистые материалы</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--icon-money">
             <p class="advantages__text">Скандинавский стиль по российской цене</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--icon-heart">
             <p class="advantages__text">Увеличивает лайки на фотографиях</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--icon-ball">
             <p class="advantages__text">Связано вручную с любовью и умилением</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--icon-rocket">
             <p class="advantages__text">Поддержка отечественного производителя</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--icon-gift">
             <p class="advantages__text">Поставляется в подарочной упаковке</p>
           </li>
         </ul>
@@ -142,10 +154,14 @@
             <a href="#" class="reviews__author-email">@misssssiskras</a>
           </blockquote>
 
-          <p class="reviews__buttons">
-            <button class="reviews__prev" type="button">Предыдущий</button>
-            <button class="reviews__next" type="button">Следующий</button>
-          </p>
+          <div class="reviews__buttons">
+            <button class="reviews__prev" type="button">
+              Предыдущий отзыв
+            </button>
+            <button class="reviews__next" type="button">
+              Следующий отзыв
+            </button>
+          </div>
 
           <a class="reviews__write button" href="#">Написать</a>
 
@@ -158,7 +174,7 @@
         <table class="contacts__list">
           <tr class="contacts__info">
             <td class="contacts__key">e-mail:</td>
-            <td class="contacts__value"><a href="info@mimimishkashop.ru" class="contacts__mailto">info@mimimishkashop.ru</a></td>
+            <td class="contacts__value"><a href="mailto:info@mimimishkashop.ru" class="contacts__mailto">info@mimimishkashop.ru</a></td>
           </tr>
           <tr class="contacts__info">
             <td class="contacts__key">адрес:</td>
@@ -167,7 +183,14 @@
         </table>
 
         <div class="contacts__map">
-          <img class="contacts__img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта">
+          <!--<img class="contacts__img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта">
+
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта, указывающая местонахождение Html-Academy"/>
+          </picture>  -->
+
           <!--  <iframe src="https://yandex.ru/map-widget/v1/-/CBe4VCs-SD" width="560" height="400" frameborder="0"></iframe> -->
         </div>
 
@@ -182,7 +205,11 @@
       <div class="page-footer__wrapper">
 
         <a class="page-footer__logo" href="#">
-            <img class="page-footer__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-footer__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка"/>
+          </picture>
         </a>
 
         <div class="page-footer__social social">

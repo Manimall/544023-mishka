@@ -20,15 +20,71 @@
 }
 
 .advantages__item {
-  padding-top: 20px;
+  padding-top: 74px;
+  margin-bottom: 11px;
   list-style: none;
+  position: relative;
+
+  &::before {
+    @include pseudo-element();
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__text {
+  margin: 0;
   font-size: 17px;
   line-height: 20px;
   color: $h-color;
   font-weight: $bold;
+}
+
+.advantages__item--icon-flower::before {
+  top: 18px;
+  left: 8px;
+  width: 32px;
+  height: 37px;
+  background-image: url("../img/icon-feature-flower.svg");
+}
+
+.advantages__item--icon-money::before {
+  top: 19px;
+  left: 0;
+  width: 47px;
+  height: 27px;
+  background-image: url("../img/icon-feature-money.svg");
+}
+
+.advantages__item--icon-heart::before {
+  top: 24px;
+  left: 8px;
+  width: 34px;
+  height: 31px;
+  background-image: url("../img/icon-feature-heart.svg");
+}
+
+.advantages__item--icon-ball::before {
+  top: 21px;
+  left: 4px;
+  width: 35px;
+  height: 34px;
+  background-image: url("../img/icon-feature-ball.svg");
+}
+
+.advantages__item--icon-rocket::before {
+  top: 22px;
+  left: -3px;
+  width: 55px;
+  height: 23px;
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.advantages__item--icon-gift::before {
+  top: 20px;
+  left: 3px;
+  width: 33px;
+  height: 32px;
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media only screen and (min-width: 768px) {
@@ -40,6 +96,7 @@
   .advantages__title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 45px;
   }
 
   .advantages__list {

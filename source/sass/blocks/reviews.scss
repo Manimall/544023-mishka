@@ -54,14 +54,53 @@
   margin: 35px auto;
   max-width: 295px;
   min-width: 260px;
+  display: flex;
+}
+
+.reviews__prev,
+.reviews__next {
+  position: relative;
+  width: 130px;
+  height: 52px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  cursor: pointer;
+
+  &::before {
+    @include pseudo-element();
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 26px;
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in;
+  }
 }
 
 .reviews__prev {
-  // Comment
+  border-right: none;
+
+  &::before {
+    background-image: url("../img/icon-left-arrow.svg");
+    // background-repeat: no-repeat;
+  }
 }
 
 .reviews__next {
-  // Comment
+
+  &::before {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
 }
 
 .reviews__write {
@@ -82,11 +121,8 @@
   .reviews {
     // width: 87%;
     // margin: 0 auto;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
     width: 100%;
     padding-right: 50px;
-    background-size: 350px auto;
     min-height: 457px;
     padding-top: 75px;
     padding-bottom: 70px;
@@ -96,6 +132,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    background-image: url("../img/review@1x.jpg");
+    background-size: 350px auto;
+    // background-position: left top;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
 
     &::after {
       height: 17px;
@@ -119,11 +164,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
   }
 
   .reviews__text {
-    padding-right: 65px;
+    // padding-right: 65px;
     margin-bottom: 50px;
+    font-size: 17px;
   }
 
   .reviews__write {
@@ -143,8 +190,23 @@
   }
 
   .reviews__buttons {
-    margin-right: 0;
-    margin-top: -30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 176px;
+    margin-bottom: 0;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    width: 88px;
+    padding: 0;
+    border: 0;
+    cursor: auto;
+
+    &::before {
+      cursor: pointer;
+    }
   }
 }
 

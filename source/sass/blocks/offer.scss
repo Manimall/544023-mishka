@@ -156,12 +156,14 @@
     width: 50%;
     margin-bottom: 0;
     min-width: 334px;
-    min-height: 636px;
+    min-height: 405px;
+    flex-grow: 1;
+    display: flex;
   }
 
   .offer__buy-info {
     width: 100%;
-    margin-top: -143px;
+    margin-top: -142px;
   }
 
   .offer__price {
@@ -207,7 +209,7 @@
   }
 
   .offer__title {
-    padding-left: 169px;
+    padding-left: 167px;
     font-size: 53px;
     line-height: 57px;
     z-index: 1;
@@ -237,7 +239,7 @@
   }
 
   .offer__img {
-    max-width: 525px;
+    min-width: 525px;
     margin-top: -163px;
     width: 50%;
     z-index: -1;

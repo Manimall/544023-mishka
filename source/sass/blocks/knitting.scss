@@ -21,25 +21,33 @@
 
 @media (min-width: 768px) {
   .knitting__heading {
-    margin-top: -54px;
+    margin-top: -64px;
     margin-bottom: 0;
+    padding-bottom: 70px;
     border-top: 1px solid rgb(236, 236, 236);
-    min-height: 237px;
+
+    min-height: 240px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    background-size: auto 22px;
   }
 
   .knitting__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 92px;
+    padding-top: 100px;
   }
 }
 
 @media (min-width: 1150px) {
   .knitting__heading {
     width: 1150px;
-    min-height: 272px;
+    min-height: 271px;
     margin-top: -45px;
     background-size: auto 34px;
+    padding-bottom: 90px;
   }
 
   .knitting__title {
