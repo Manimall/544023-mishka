@@ -1,6 +1,6 @@
 .catalog {
   margin-bottom: 60px;
-  margin-top: 30px;
+  // margin-top: 30px;
 }
 
 .catalog__list {
@@ -15,7 +15,6 @@
   padding-bottom: 81px;
   min-height: 177px;
   margin-bottom: 30px;
-  margin-top: 20px;
 }
 
 .catalog__title {
@@ -41,8 +40,12 @@
 
 
 @media (min-width: 768px) {
+  .catalog {
+    margin-top: 30px;
+  }
+
   .catalog__product {
-    height: 334px;
+    min-height: 334px;
     margin-bottom: 55px;
   }
 

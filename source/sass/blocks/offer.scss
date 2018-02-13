@@ -161,6 +161,11 @@
     min-height: 405px;
     flex-grow: 1;
     display: flex;
+    justify-content: flex-end;
+  }
+
+  .offer__img img {
+    width: 100%;
   }
 
   .offer__buy-info {

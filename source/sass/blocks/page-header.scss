@@ -15,11 +15,21 @@
   opacity: 0.3;
 }
 
+.page-header__logo-img {
+  width: 86px;
+  height: 35px;
+}
+
 @media (min-width: 768px) {
   .page-header__logo {
     order: 0;
     padding-top: 10px;
     padding-bottom: 0;
+  }
+
+  .page-header__logo-img {
+    width: 113px;
+    height: 46px;
   }
 }
 
@@ -33,5 +43,10 @@
   .page-header {
     width: 1150px;
     margin: 0 auto;
+  }
+
+  .page-header__logo-img {
+    width: 149px;
+    height: 72px;
   }
 }

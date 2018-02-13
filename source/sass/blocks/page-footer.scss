@@ -42,6 +42,9 @@
     width: 102px;
     height: 34px;
     margin-top: 17px;
+
+    background-image: url("../img/logo-footer.svg");
+    background-repeat: no-repeat;
   }
 
   .page-footer__social {
@@ -70,5 +73,10 @@
   .page-footer {
     max-width: 1150px;
     margin: 0 auto;
+  }
+
+  .page-footer__logo{
+    // padding-left: 50px;
+    // background-position-x: 50px;
   }
 }
