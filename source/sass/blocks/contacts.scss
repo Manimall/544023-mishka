@@ -51,7 +51,6 @@
   margin: 40px auto;
   position: relative;
   width: 100vw;
-  position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -235,7 +234,7 @@
     top: -50px;
     right: 0;
     left: 50%;
-    width: 525px;
+    // width: 525px;
     // z-index: -1;
 
     background-image: url("../img/map-desktop@1x.jpg");
