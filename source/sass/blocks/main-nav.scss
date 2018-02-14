@@ -21,10 +21,6 @@
   right: 29px;
 }
 
-.main-nav--closed .main-nav__list {
-  display: none;
-}
-
 .main-nav--no-js .toggle {
   display: none;
 }
@@ -39,6 +35,11 @@
   width: 100%;
 }
 
+.main-nav--closed,
+.main-nav__list {
+  // display: none;
+}
+
 .main-nav__sub-text {
   display: none;
 }
@@ -47,6 +48,7 @@
   .main-nav {
     padding: 0 50px;
     z-index: 10;
+    display: flex;
 
     flex-direction: row;
     flex-wrap: wrap;
@@ -77,6 +79,12 @@
 
     margin-left: auto;
     margin-top: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav--closed .main-nav__list {
+    display: none;
   }
 }
 
