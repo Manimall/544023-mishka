@@ -25,6 +25,7 @@
     order: 0;
     padding-top: 10px;
     padding-bottom: 0;
+    flex: 1 0 165px;
   }
 
   .page-header__logo-img {
@@ -38,6 +39,11 @@
     order: 1;
     padding-top: 9px;
     padding-bottom: 0;
+    // flex: 0 0 auto;
+    //display: flex;
+    //justify-content: flex-end;
+    // width: auto;
+    flex: 0 0 auto;
   }
 
   .page-header {

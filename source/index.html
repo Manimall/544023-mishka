@@ -48,25 +48,25 @@
       </nav>
 
       <section class="hero">
+        <div class="hero__container">
+          <h1 class="visually-hidden">Mishka - магазин товаров ручной работы</h1>
 
-        <h1 class="visually-hidden">Mishka - магазин товаров ручной работы</h1>
+          <div class="hero__header">
+            <p class="hero__title">Милые штуки ручной <br> работы для дома</p>
+          </div>
 
-        <div class="hero__header">
-          <p class="hero__title">Милые штуки ручной <br> работы для дома</p>
+          <ul class="hero__list">
+
+            <li class="hero__item">
+              <a href="#" class="hero__link hero__link--lighter">Предметы<br> интерьера</a>
+            </li>
+
+            <li class="hero__item">
+              <a href="#" class="hero__link hero__link--darker">Детские<br> игрушки</a>
+            </li>
+
+          </ul>
         </div>
-
-        <ul class="hero__list">
-
-          <li class="hero__item">
-            <a href="#" class="hero__link hero__link--lighter">Предметы<br> интерьера</a>
-          </li>
-
-          <li class="hero__item">
-            <a href="#" class="hero__link hero__link--darker">Детские<br> игрушки</a>
-          </li>
-
-        </ul>
-
       </section>
 
     </header>
@@ -184,7 +184,7 @@
           </tr>
         </table>
 
-        <div class="contacts__map">
+        <div class="contacts__map" id="my-map">
           <!--<img class="contacts__img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта">
 
           <picture>
@@ -194,6 +194,9 @@
           </picture>  -->
 
           <!--  <iframe src="https://yandex.ru/map-widget/v1/-/CBe4VCs-SD" width="560" height="400" frameborder="0"></iframe> -->
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15988.035052576044!2d30.30625045365359!3d59.94036584010551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML+Academy!5e0!3m2!1sru!2sru!4v1518591826823" id="map" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.7712692400273!2d30.32162330422974!3d59.935937526307626!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML+Academy!5e0!3m2!1sru!2sru!4v1518596097562" id="map" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBejFJtUWD" width="525" height="457px" frameborder="0"></iframe> -->
         </div>
 
         <div class="contacts__btn">
@@ -239,6 +242,9 @@
 
     <script src="js/button__toggle.js"></script>
     <script src="js/dropdown-menu.js"></script>
+    <!-- <script src="js/map.js"></script> -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCNr7o82Iw1X1q39qfggM-ESFcEAHx7g4kcallback=initMap"></script> -->
 
   </body>
 </html>

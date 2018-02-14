@@ -1,4 +1,8 @@
 .hero {
+  background-color: rgb(249, 249, 249);
+}
+
+.hero__container {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -101,7 +105,7 @@
 }
 
 @media (min-width: 768px) {
-  .hero {
+  .hero__container {
     @include centerer();
     // margin: 0 auto;
     position: relative;
@@ -139,12 +143,13 @@
   .hero__list::after {
     @include pseudo-element();
     bottom: -9px;
-    width: 110%;
-    left: -11px;
+    width: 120%;
+    left: -10%;
     height: 24px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat-x: repeat;
     background-size: 768px 24px;
+    background-position: 18px 0;
   }
 
   .hero__link {
@@ -158,7 +163,7 @@
 }
 
 @media (min-width: 1150px) {
-  .hero {
+  .hero__container {
     // width: 1050px;
     margin-top: -45px;
 
@@ -171,13 +176,36 @@
   }
 
   .hero__list::after {
+    width: 130%;
+    left: -15%;
     bottom: -15px;
     height: 34px;
     background-size: 1150px 34px;
-    background-position: 20px 0;
+    background-position: -7px 0;
   }
 
   .hero__title {
     padding-top: 165px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .hero {
+    width: 109%;
+    margin-left: -4.5%;
+    position: relative;
+
+    // &::after {
+    //   @include pseudo-element();
+    //   width: 100%;
+    //   height: 34px;
+    //   bottom: -17px;
+    //   left: 0;
+
+    //   background-image: url("../img/bg-zigzag-fill.svg");
+    //   background-size: contain;
+    //   background-repeat: repeat-x;
+    //   background-position: -5px 0;
+    // }
   }
 }

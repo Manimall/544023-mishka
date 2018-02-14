@@ -19,7 +19,7 @@
 .user-list__item a {
   display: block;
 
-  padding-top: 27px;
+  padding-top: 32px;
   padding-bottom: 27px;
   padding-left: 75px;
 
@@ -31,7 +31,8 @@
 @media (min-width: 768px) {
   .header-list {
     order: 2;
-    width: auto;
+    // width: auto;
+    width: 400px;
   }
 
   .header-list__item {
