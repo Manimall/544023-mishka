@@ -16,18 +16,23 @@
 }
 
 .main-nav__toggle {
-  border: none;
-  background-color: transparent;
+  @include pseudo-element();
+  top: 26px;
+  right: 29px;
+}
 
-  width: 22px;
-  height: 22px;
+.main-nav--closed .main-nav__list {
+  display: none;
+}
 
-  background-image: url("../img/icon-menu-open.svg");
-  background-repeat: no-repeat;
+.main-nav--no-js .toggle {
+  display: none;
+}
 
-  position: absolute;
-  top: 32px;
-  right: 30px;
+.main-nav--no-js .main-nav__list {
+  position: static;
+  bottom: 0;
+  display: block;
 }
 
 .main-nav__list {
