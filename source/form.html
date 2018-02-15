@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no"/>
+  <meta name="format-detection" content="telephone=no">
 
   <title>Mishka/Order-Form</title>
 
@@ -11,6 +11,10 @@
 
 </head>
 <body>
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <header class="page-header">
 
@@ -20,7 +24,7 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка"/>
+          <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка">
         </picture>
       </a>
 
@@ -71,7 +75,7 @@
             <legend class="form__title">Тип</legend>
             <div class="form__group">
               <label class="form__label form__label--ticks">
-                <input type="radio" name="type" value="accessory" class="visually-hidden" checked>
+                <input type="radio" name="type" value="accessory" class="visually-hidden" checked="">
                 <span class="form__radio"></span>
                 Аксессуар для интерьера
               </label>
@@ -89,12 +93,12 @@
             <legend class="form__title">Цвет</legend>
             <div class="form__group form__group--checkbox">
               <label class="form__label form__label--ticks">
-                <input type="checkbox" name="white" value="white" class="visually-hidden" checked>
+                <input type="checkbox" name="white" value="white" class="visually-hidden" checked="">
                 <span class="form__checkbox"></span>
                 Белый
               </label>
               <label class="form__label form__label--ticks">
-                <input type="checkbox" name="gray" value="gray" class="visually-hidden" checked>
+                <input type="checkbox" name="gray" value="gray" class="visually-hidden" checked="">
                 <span class="form__checkbox"></span>
                 Серый
               </label>
@@ -131,12 +135,12 @@
 
             <label class="form__label">
               <span class="form__personal">Имя:</span>
-              <input class="form__text" type="text" name="auth-name" placeholder="Введите ваше имя*" required>
+              <input class="form__text" type="text" name="auth-name" placeholder="Введите ваше имя*" required="">
             </label>
 
             <label class="form__label">
               <span class="form__personal">Фамилия:</span>
-              <input class="form__text" type="text" name="auth-surname" placeholder="Укажите фамилию*" required>
+              <input class="form__text" type="text" name="auth-surname" placeholder="Укажите фамилию*" required="">
             </label>
 
             <label class="form__label">
@@ -150,12 +154,12 @@
 
         <div class="form__wrapper form__wrapper--no-legend form__wrapper--phone">
           <label class="form__title form__title--line" for="user-phone">Тел</label>
-          <input class="form__text" id="user-phone" type="text" placeholder="+7 XXX XX XX*" pattern="\+7\ [0-9]{3}\ [0-9]{2}\ [0-9]{2}" required>
+          <input class="form__text" id="user-phone" type="text" placeholder="+7 XXX XX XX*" pattern="\+7\ [0-9]{3}\ [0-9]{2}\ [0-9]{2}" required="">
         </div>
 
         <div class="form__wrapper form__wrapper--no-legend form__wrapper--email">
           <label class="form__title form__title--line" for="user-email">E-mail</label>
-          <input class="form__text" id="user-email" type="text" placeholder="Ваш Email*" required>
+          <input class="form__text" id="user-email" type="text" placeholder="Ваш Email*" required="">
         </div>
 
         <div class="form__wrapper form__wrapper--textarea">
