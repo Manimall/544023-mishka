@@ -61,7 +61,11 @@
     order: 2;
     // width: 350px;
     margin: 0;
-    flex: 0 0 350px;
+    flex: 1 0 350px;
+  }
+
+  .user-list__link--cart::after {
+    left: 40px;
   }
 
   .user-list__item a {

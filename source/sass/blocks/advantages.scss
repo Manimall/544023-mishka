@@ -39,12 +39,16 @@
   font-weight: $bold;
 }
 
+// .advantages__item {
+//   fill: $green-accent;
+// }
+
 .advantages__item--icon-flower::before {
   top: 18px;
   left: 8px;
   width: 32px;
   height: 37px;
-  background-image: url("../img/icon-feature-flower.svg");
+  background-image: url("../img/feature-flower.svg");
 }
 
 .advantages__item--icon-money::before {
@@ -52,7 +56,7 @@
   left: 0;
   width: 47px;
   height: 27px;
-  background-image: url("../img/icon-feature-money.svg");
+  background-image: url("../img/feature-money.svg");
 }
 
 .advantages__item--icon-heart::before {
@@ -60,7 +64,7 @@
   left: 8px;
   width: 34px;
   height: 31px;
-  background-image: url("../img/icon-feature-heart.svg");
+  background-image: url("../img/feature-heart.svg");
 }
 
 .advantages__item--icon-ball::before {
@@ -68,7 +72,7 @@
   left: 4px;
   width: 35px;
   height: 34px;
-  background-image: url("../img/icon-feature-ball.svg");
+  background-image: url("../img/feature-ball.svg");
 }
 
 .advantages__item--icon-rocket::before {
@@ -76,7 +80,7 @@
   left: -3px;
   width: 55px;
   height: 23px;
-  background-image: url("../img/icon-feature-rocket.svg");
+  background-image: url("../img/feature-rocket.svg");
 }
 
 .advantages__item--icon-gift::before {
@@ -84,7 +88,7 @@
   left: 3px;
   width: 33px;
   height: 32px;
-  background-image: url("../img/icon-feature-gift.svg");
+  background-image: url("../img/feature-gift.svg");
 }
 
 @media only screen and (min-width: 768px) {

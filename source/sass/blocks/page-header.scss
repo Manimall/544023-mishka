@@ -43,7 +43,7 @@
     //display: flex;
     //justify-content: flex-end;
     // width: auto;
-    flex: 0 0 auto;
+    flex: 1 0 auto;
   }
 
   .page-header {
@@ -54,5 +54,6 @@
   .page-header__logo-img {
     width: 149px;
     height: 72px;
+    margin-left: 30%;
   }
 }

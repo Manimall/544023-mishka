@@ -42,10 +42,25 @@
         <li class="header-list__item"><a href="form.html">Вязание на заказ</a></li>
       </ul>
 
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item user-list__item--search"><a href="#">Поиск по сайту</a></li>
-        <li class="user-list__item user-list__item--cart"><a href="#">Корзина: пока пуста</a></li>
-      </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--search">
+            <a class="user-list__link" href="#" aria-label="Поиск по сайту">
+              <svg class="search__icon" width="18" height="18" role="img">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+              Поиск по сайту
+            </a>
+          </li>
+
+          <li class="user-list__item user-list__item--cart">
+            <a class="user-list__link" href="#" aria-label="Переход в корзину">
+              <svg class="mini-cart__icon" width="21" height="18" role="img">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
 
       <ul class="main-nav__list goods-list">
         <li class="goods-list__item"><a href="#">Новые поступления</a></li>
@@ -84,7 +99,15 @@
 
             <div class="product__to-order">
               <p class="product__price">1 200 руб.</p>
-              <a href="cart.html" class="product__cart">Заказать</a>
+
+              <a href="form.html" class="product__cart">
+                <svg class="product__icon-cart" width="21" height="18" role="img">
+                  <title>Добавить товар в корзину</title>
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                Заказать
+              </a>
+
             </div>
           </div>
         </article>
@@ -104,8 +127,17 @@
             <p class="product__data">Диаметр 15 см, высота 10 см</p>
 
             <div class="product__to-order">
+
               <p class="product__price">690 руб.</p>
-              <a href="cart.html" class="product__cart">Заказать</a>
+
+              <a href="form.html" class="product__cart">
+                <svg class="product__icon-cart" width="21" height="18" role="img">
+                  <title>Добавить товар в корзину</title>
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                Заказать
+              </a>
+
             </div>
           </div>
         </article>
@@ -125,8 +157,17 @@
             <p class="product__data">Диаметр 30 см, высота 30 см</p>
 
             <div class="product__to-order">
+
               <p class="product__price">1 500 руб.</p>
-              <a href="cart.html" class="product__cart">Заказать</a>
+
+              <a href="form.html" class="product__cart">
+                <svg class="product__icon-cart" width="21" height="18" role="img">
+                  <title>Добавить товар в корзину</title>
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                Заказать
+              </a>
+
             </div>
           </div>
         </article>
@@ -141,14 +182,25 @@
       </div>
 
       <div class="video__video-img">
-        <button class="video__control">Play</button>
+
+        <button class="video__control" type="button">
+          <svg width="101" height="77" role="img">
+            <title>Запустить видеоролик</title>
+            <use xlink:href="img/sprite.svg#icon-play"></use>
+          </svg>
+          Play
+        </button>
+
       </div>
 
       <div class="video__wrapper">
+
         <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+
         <div class="video__btn">
-          <a class="video__to-order button" href="order.html">Сделать заказ</a>
+          <a class="video__to-order button" href="form.html">Сделать заказ</a>
         </div>
+
       </div>
     </section>
 
@@ -158,30 +210,58 @@
     <div class="page-footer__wrapper">
 
       <a class="page-footer__logo" href="index.html">
+        <svg width="102" height="34" role="img">
+          <title>Логотип компании Мишка</title>
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
         <!-- <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="page-footer__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка"/>
         </picture> -->
-      </a>
 
       <div class="page-footer__social social">
         <ul class="social__list">
+
           <li class="social__item">
-            <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy" target="_blank">Мы в Инстаграме</a>
+            <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy" target="_blank" aria-label="Переход на наш аккаунт в Инстаграмме">
+             <svg class="social__icon" width="22" height="21" role="img">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+              Мы в Инстаграмме
+            </a>
           </li>
+
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Переход на наш аккаунт в Фейсбуке">
+              <svg class="social__icon" width="15" height="29" role="img">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+              Мы в Фейсбуке
+            </a>
           </li>
+
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">Мы в Твитере</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank" aria-label="Переход на наш аккаунт в Твиттере">
+              <svg class="social__icon" width="24" height="20" role="img">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+              Мы в Твиттере
+            </a>
           </li>
+
         </ul>
       </div>
 
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link button--link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+        <a class="copyright__link button--link" href="https://htmlacademy.ru/" target="_blank" aria-label="Переход на главную страницу компании HTML Academy">
+          <svg class="copyright__icon-developer" width="27" height="34" role="img">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+          HTML Academy
+        </a>
       </div>
 
     </div>

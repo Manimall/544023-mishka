@@ -20,6 +20,10 @@ var svgSprite = require('gulp-svg-sprites'),
     cheerio = require('gulp-cheerio'),
     replace = require('gulp-replace');
 var browserSync = require('browser-sync');
+var uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
+var jshint = require("gulp-jshint");
+// var htmlmin = require("gulp-htmlmin");
 
 
 // Сервер и автообновление страницы Browsersync
@@ -67,13 +71,24 @@ gulp.task("watch", ['browser-sync'], function() {
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
+/* Сборка SVG спрайта */
 gulp.task("sprite", function() {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/inSprite-icons/**/*.svg")
+    .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("minsprite", function() {
+  return gulp.src("source/img/inSprite-icons/**/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("true-sprite.svg"))
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("html", function () {
@@ -100,8 +115,21 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+/* Проверяет, объединяет, минифицирует JS для build версии */
+gulp.task("scripts", function() {
+  return gulp.src("source/js/*.js")
+    .pipe(plumber())
+    .pipe(jshint())
+    .pipe(jshint.reporter("default"))
+    .pipe(jshint.reporter("fail"))
+    .pipe(concat("scripts.js"))
+    .pipe(uglify())
+    .pipe(rename("min.scripts.js"))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "sprite", "html", done);
+  run("clean", "copy", "style", "scripts", "images", "webp", "sprite", "html", done);
 });
 
 gulp.task("copy", function () {
@@ -149,3 +177,30 @@ gulp.task('svgSpriteBuild', function () {
     ))
     .pipe(gulp.dest(assetsDir + 'build/img'));
 });
+
+gulp.task("mysprite", function () {
+  return gulp.src("source/img/inSprite-icons/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    // remove all fill and style declarations in out shapes
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+    // cheerio plugin create unnecessary string '>', so replace it.
+    .pipe(replace("&gt;", ">"))
+    .pipe(rename("newsprite.svg"))
+    .pipe(gulp.dest("build/img"));
+})
+
+// /* Минифицирует HTML файлы в папке build*/
+// gulp.task("minhtml", function() {
+//   return gulp.src("build/*.html")
+//     .pipe(htmlmin({collapseWhitespace: true}))
+//     .pipe(gulp.dest("build"));
+// });
