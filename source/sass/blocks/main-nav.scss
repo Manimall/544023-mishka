@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+.main-nav a {
+  color: $h-color;
+}
+
 .main-nav a:hover,
 .main-nav a:focus {
   color: rgba(0, 0, 0, 0.6);
