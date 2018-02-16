@@ -92,6 +92,17 @@
   cursor: pointer;
 }
 
+.visually-hidden {
+  opacity: 0;
+  display: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    display: none;
+  }
+}
+
 .form__label:first-of-type {
   margin-top: 25px;
 }
