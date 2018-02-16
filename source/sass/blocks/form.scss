@@ -229,29 +229,23 @@ input {
   margin-bottom: 30px;
 }
 
-.form__wrapper--no-legend::after {
-  content: " ";
-  width: 25px;
-  height: 24px;
-
+.user-contacts__icon {
   position: absolute;
-  right: 10px;
   top: 35px;
-
-  background-image: url("../img/icon-phone.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-
-  opacity: 0.2;
+  right: 8px;
+  z-index: 100;
+  fill: #cccccc;
 }
 
-.form__wrapper--no-legend.form__wrapper--email::after {
-  width: 32px;
-
-  top: 40px;
+.form__wrapper--email .user-contacts__icon {
   right: 5px;
+}
 
-  background-image: url("../img/icon-mail.svg");
+.form__text:hover ~ .user-contacts__icon,
+.form__text:focus ~ .user-contacts__icon,
+.form__text:active ~ .user-contacts__icon {
+  fill: $green-accent;
+  transition: fill 0.3s ease-in-out;
 }
 
 .form__textarea {
@@ -332,15 +326,27 @@ input {
     padding-top: 0;
   }
 
-  .form__wrapper--no-legend::after {
-    top: 63px;
-    right: 75px;
+  .form__wrapper--email .user-contacts__icon {
+    top: 9px;
+    right: 44px;
+    margin-right: 30px;
   }
 
-  .form__wrapper--no-legend.form__wrapper--email::after {
-    top: 12px;
-    right: 72px;
+  .form__wrapper--phone .user-contacts__icon {
+    right: 47px;
+    margin-right: 30px;
+    top: 60px;
   }
+
+  // .form__wrapper--no-legend::after {
+  //   top: 63px;
+  //   right: 75px;
+  // }
+
+  // .form__wrapper--no-legend.form__wrapper--email::after {
+  //   top: 12px;
+  //   right: 72px;
+  // }
 
   .form__wrapper--textarea {
     padding-bottom: 50px;
@@ -498,15 +504,15 @@ input {
     padding-top: 48px;
   }
 
-  .form__wrapper--no-legend::after {
-    top: 61px;
-    right: 236px;
-  }
+  // .form__wrapper--no-legend::after {
+  //   top: 61px;
+  //   right: 236px;
+  // }
 
-  .form__wrapper--no-legend.form__wrapper--email::after {
-    top: 16px;
-    right: 230px;
-  }
+  // .form__wrapper--no-legend.form__wrapper--email::after {
+  //   top: 16px;
+  //   right: 230px;
+  // }
 
   .form__wrapper--finish-line {
     width: 700px;
@@ -578,5 +584,17 @@ input {
   .form__label input[type="checkbox"]:checked + .form__checkbox::after {
     width: 33px;
     height: 22px;
+  }
+
+  .form__wrapper--email .user-contacts__icon {
+    top: 11px;
+    right: 201px;
+    margin-right: 30px;
+  }
+
+  .form__wrapper--phone .user-contacts__icon {
+    right: 205px;
+    margin-right: 30px;
+    top: 60px;
   }
 }
