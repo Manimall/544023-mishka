@@ -22,6 +22,28 @@
   background-image: url("../img/icon-cart.svg");
 }
 
+.user-list__icon {
+  fill: #d3d2d2;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+
+  &--search {
+    width: 18px;
+    height: 18px;
+  }
+  &--cart {
+    //width: 21px;
+   // height: 18px;
+  }
+  &:hover {
+    fill: $green-accent;
+  }
+  &:active {
+    fill: #c7ece7;
+  }
+}
+
 @media (min-width: 768px) {
   .user-list {
     order: 1;
