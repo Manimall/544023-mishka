@@ -32,13 +32,16 @@
     width: 18px;
     height: 18px;
   }
+
   &--cart {
     width: 21px;
     height: 18px;
   }
+
   &:hover {
     fill: $green-accent;
   }
+
   &:active {
     fill: #c7ece7;
   }
