@@ -100,7 +100,7 @@
             <div class="product__to-order">
               <p class="product__price">1 200 руб.</p>
 
-              <a href="#" class="product__cart">
+              <a href="order-form.html" class="product__cart">
                 <svg class="product__icon-cart" width="21" height="18" role="img">
                   <title>Добавить товар в корзину</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart" width="21px" height="18px"></use>
@@ -130,7 +130,7 @@
 
               <p class="product__price">690 руб.</p>
 
-              <a href="#" class="product__cart">
+              <a href="order-form.html" class="product__cart">
                 <svg class="product__icon-cart" width="21" height="18" role="img">
                   <title>Добавить товар в корзину</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart" width="21px" height="18px"></use>
@@ -160,7 +160,7 @@
 
               <p class="product__price">1 500 руб.</p>
 
-              <a href="#" class="product__cart">
+              <a href="order-form.html" class="product__cart">
                 <svg class="product__icon-cart" width="21" height="18" role="img">
                   <title>Добавить товар в корзину</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart" width="21px" height="18px"></use>
@@ -209,7 +209,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
 
-      <a class="page-footer__logo" href="#">
+      <a class="page-footer__logo" href="index.html">
         <svg class="page-footer__logo-svg" width="102" height="34" role="img">
           <title>Логотип компании Мишка</title>
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer" width="102px" height="34px"></use>
@@ -268,11 +268,25 @@
     </div>
   </footer>
 
+  <div class="modal" id="popup">
+    <div class="modal__background"></div>
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <span class="modal__label">Выберите размер:</span>
+      <ul class="modal__sizes sizes">
+        <li class="sizes__item sizes__item--current" tabindex="1">S</li>
+        <li class="sizes__item" tabindex="2">M</li>
+        <li class="sizes__item" tabindex="3">L</li>
+      </ul>
+      <button class="modal__btn button" type="button" tabindex="4">Добавить</button>
+    </div>
+  </div>
+
   <!-- <script src="js/button__toggle.js"></script> -->
   <script src="js/dropdown-menu.js"></script>
-  <script src="js/min.scripts.js"></script>
-  <script src="js/lib/min.picturefill.js"></script>
-  <script src="js/lib/min.svg4everybody.js"></script>
+  <script src="js/modal-popup.js"></script>
+  <script src="js/min.picturefill.js"></script>
+  <script src="js/min.svg4everybody.js"></script>
   <script>svg4everybody();</script>
 
 </body>

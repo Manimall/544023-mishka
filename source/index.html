@@ -135,7 +135,7 @@
 
         <div class="offer__buy-info">
           <b class="offer__price">Цена: 990 руб.</b>
-          <a class="offer__order button" href="#">Заказать</a>
+          <a class="offer__order button" href="order-form.html">Заказать</a>
         </div>
       </section>
 
@@ -291,15 +291,29 @@
       </div>
     </footer>
 
+    <div class="modal" id="popup">
+      <div class="modal__background"></div>
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <span class="modal__label">Выберите размер:</span>
+        <ul class="modal__sizes sizes">
+          <li class="sizes__item sizes__item--current" tabindex="1">S</li>
+          <li class="sizes__item" tabindex="2">M</li>
+          <li class="sizes__item" tabindex="3">L</li>
+        </ul>
+        <button class="modal__btn button" type="button" tabindex="4">Добавить</button>
+      </div>
+    </div>
+
 
     <!-- <script src="js/button__toggle.js"></script> -->
     <script src="js/dropdown-menu.js"></script>
+    <script src="js/modal-popup.js"></script>
     <!-- <script src="js/map.js"></script> -->
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCNr7o82Iw1X1q39qfggM-ESFcEAHx7g4kcallback=initMap"></script> -->
-    <script src="js/min.scripts.js"></script>
-    <script src="js/lib/min.picturefill.js"></script>
-    <script src="js/lib/min.svg4everybody.js"></script>
+    <script src="js/min.picturefill.js"></script>
+    <script src="js/min.svg4everybody.js"></script>
     <script>svg4everybody();</script>
 
   </body>

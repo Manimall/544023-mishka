@@ -176,23 +176,23 @@
   }
 
   .hero__list::after {
-    width: 130%;
-    left: -15%;
+    width: 280%;
+    left: -90%;
     bottom: -15px;
     height: 34px;
     background-size: 1150px 34px;
-    background-position: -7px 0;
+    background-position: 35px 0;
   }
 
   .hero__title {
-    padding-top: 165px;
+    padding-top: 154px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .hero {
-    width: 109%;
-    margin-left: -4.5%;
+    width: 260%;
+    margin-left: -80%;
     position: relative;
 
     // &::after {
