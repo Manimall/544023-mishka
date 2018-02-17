@@ -83,6 +83,10 @@
 }
 
 @media (min-width: 1150px) {
+  .catalog{
+    margin-bottom: -10px;
+  }
+
   .catalog__list {
     // width: 1050px;
     display: flex;
@@ -91,6 +95,10 @@
     justify-content: space-between;
 
     margin-top: 110px;
+  }
+
+  .catalog__product:last-of-type {
+    margin-bottom: 0;
   }
 
   .catalog__title {

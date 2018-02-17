@@ -231,8 +231,8 @@
   }
 
   .video__header::after {
-    top: 45px;
-    left: 0;
+    top: 47px;
+    left: 8px;
   }
 
   .video__header,
@@ -246,6 +246,8 @@
     padding-top: 0;
     padding-left: 0;
     min-width: 230px;
+    margin-top: 0;
+    margin-left: 4px;
   }
 
   .video__text {
@@ -257,7 +259,13 @@
   .video__to-order {
     min-width: 230px;
     width: 100%;
-    margin-left: 0;
+    margin-left: 4px;
+    margin-top: 52px;
+    margin-bottom: -5px;
+  }
+
+  .video__to-order {
+    margin-left: 2px;
   }
 }
 

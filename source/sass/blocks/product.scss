@@ -214,21 +214,17 @@
   .product__title {
     padding-right: 20px;
     width: 100%;
-    margin-bottom: 6px;
-  }
-
-  .product:last-of-type .product__title {
-    margin-top: 15px;
-  }
-
-  .product:last-of-type .product__to-order {
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-bottom: 7px;
   }
 
   .product__data {
     width: 100%;
+    padding-bottom: 0;
+  }
+
+  .product__cart {
+    margin-right: 3px;
+    margin-top: -3px;
   }
 
   .product__img {
@@ -243,9 +239,9 @@
   .product__to-order {
     width: 100%;
     margin-top: auto;
-    padding-top: 24px;
-    padding-bottom: 30px;
-    height: 75px;
+    padding-top: 22px;
+    padding-bottom: 27px;
+    // height: 75px;
 
     align-items: center;
   }

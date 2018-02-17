@@ -265,6 +265,11 @@
       background-image: url("../img/map-desktop@2x.jpg");
       background-size: 525px auto;
     }
+
+    .contacts__map::before {
+      top: 43%;
+      left: 52%;
+    }
   }
 
   // .contacts__map {

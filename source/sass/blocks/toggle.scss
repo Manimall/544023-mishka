@@ -21,14 +21,13 @@
     &:active {
       background-color: #ffffff;
       outline: none;
-      // transition: all 700ms ease-in-out;
     }
   }
 
   .main-nav--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 18px;
     right: 2px;
     width: 20px;
     height: 2.5px;

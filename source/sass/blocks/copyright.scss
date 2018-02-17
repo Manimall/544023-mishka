@@ -63,11 +63,12 @@
 }
 
 @media (min-width: 1150px) {
-  // .copyright {
-  //   justify-content: flex-end;
-  // }
+  .copyright__text {
+    margin-top: -1px;
+    padding-top: 0;
+  }
 
-  // .copyright__link {
-  //   margin-right: 27px;
-  // }
+  .copyright__icon {
+    top: -6px;
+  }
 }
