@@ -128,7 +128,7 @@
 
 @media (min-width: 768px) {
   .product {
-    margin-bottom: 55px;
+    margin-bottom: 46px;
     display: flex;
   }
 
@@ -148,7 +148,9 @@
   .product__title {
     font-size: 20px;
     margin-top: 24px;
-    padding-right: 25px;
+    padding-right: 40px;
+    width: 84.5%;
+    margin-bottom: 7px;
 
     &:hover {
       opacity: 0.6;
@@ -161,6 +163,7 @@
 
   .product__data {
     font-size: 15px;
+    width: 84.5%;
     border: none;
   }
 
@@ -176,14 +179,16 @@
   }
 
   .product__price {
-    margin-bottom: 27px;
+    margin-bottom: 34px;
     margin-left: 0;
     font-size: 17px;
     line-height: 24px;
+    margin-top: 22px;
   }
 
   .product__cart {
     margin-right: 0;
+    margin-top: -14px;
   }
 }
 
@@ -209,7 +214,17 @@
   .product__title {
     padding-right: 20px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+  }
+
+  .product:last-of-type .product__title {
+    margin-top: 15px;
+  }
+
+  .product:last-of-type .product__to-order {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .product__data {
@@ -238,5 +253,26 @@
   .product__price {
     margin-bottom: 0;
     margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .product__title {
+    margin: 20px auto 6px;
+  }
+
+  .product__data {
+    padding-bottom: 19px;
+  }
+
+  .product__price {
+    margin-top: 21px;
+    margin-bottom: 26px;
+    margin-left: 10.85%;
+  }
+
+  .product__cart {
+    margin-top: -7px;
+    margin-right: 10.5%;
   }
 }

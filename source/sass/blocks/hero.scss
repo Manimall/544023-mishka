@@ -109,10 +109,10 @@
     @include centerer();
     // margin: 0 auto;
     position: relative;
-    margin-top: -63px;
+    margin-top: -57px;
     // width: 87%;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position-y: 5px;
+    background-position-y: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -125,14 +125,14 @@
   }
 
   .hero__title {
-    padding: 160px 40px 0;
+    padding: 154px 40px 0;
     font-size: 43px;
     line-height: 50px;
   }
 
   .hero__list {
     display: flex;
-    margin-top: 4px;
+    margin-top: -2px;
     flex-direction: row;
     position: relative;
   }
