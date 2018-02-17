@@ -10,7 +10,7 @@
 
   &::after {
     @include pseudo-element();
-    top: 99.3%;
+    top: 99%;
     left: -15%;
     width: 130%;
     height: 7px;
@@ -131,6 +131,7 @@
     margin-top: 0;
     font-size: 43px;
     line-height: 50px;
+    margin-left: -4px;
   }
 
   .offer__product-week {
@@ -153,13 +154,13 @@
   .offer__description {
     font-size: 17px;
     line-height: 30px;
-    margin-top: -8px;
+    margin-top: -9px;
     margin-left: -2px;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   .offer__key {
-    width: 33.37%;
+    width: 32.5%;
   }
 
   .offer__img {
@@ -183,7 +184,7 @@
 
   .offer__price {
     width: 43.71%;
-    padding: 25px 30px 34px;
+    padding: 25px 30px 34px 28px;
     margin: 0;
     text-align: center;
     max-width: 290px;
@@ -194,6 +195,7 @@
   .offer__order {
     max-width: 290px;
     margin-bottom: 0;
+    padding: 14px $gutter;
   }
 }
 
@@ -221,12 +223,12 @@
 
   .offer__header {
     position: relative;
-    margin-bottom: 56px;
+    margin-bottom: 55px;
     padding-left: 0;
   }
 
   .offer__title {
-    padding-left: 167px;
+    padding-left: 172px;
     font-size: 53px;
     line-height: 57px;
     z-index: 1;
@@ -236,7 +238,7 @@
   .offer__product-week {
     text-align: center;
     width: 177px;
-    padding: 9px 40px 7px 25px;
+    padding: 9px 38px 7px 25px;
     position: absolute;
     left: 0;
     top: 5px;
@@ -253,7 +255,7 @@
   }
 
   .offer__description {
-    margin-bottom: 47px;
+    margin-bottom: 46px;
   }
 
   .offer__img {
@@ -265,12 +267,17 @@
 
   .offer__buy-info {
     margin-left: 0;
-    margin-top: -147px;
+    margin-top: -145px;
   }
 
   .offer__price {
     font-size: 20px;
     padding-bottom: 35px;
+  }
+
+  .offer__order {
+    min-height: 50px;
+    padding: 14px $gutter;
   }
 }
 

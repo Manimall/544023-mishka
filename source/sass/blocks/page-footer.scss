@@ -33,7 +33,7 @@
     justify-content: space-between;
     // width: 87%;
     // margin: 0 auto;
-    padding: 7px 0 30px;
+    padding: 5px 0 30px;
     align-items: center;
   }
 
@@ -94,7 +94,7 @@
   }
 
   .page-footer__logo {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 
   .page-footer__social {
@@ -102,12 +102,12 @@
   }
 
   .page-footer__copyright {
-    padding-top: 23px;
+    padding-top: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .page-footer__copyright {
-    padding-top: 21px;
+    padding-top: 22px;
   }
 }

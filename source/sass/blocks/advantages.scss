@@ -94,7 +94,7 @@
 @media (min-width: 768px) {
   .advantages {
     width: 668px;
-    margin: 57px auto 45px;
+    margin: 57px auto 42px;
   }
 
   .advantages__title {
@@ -120,6 +120,7 @@
 
   .advantages__item--icon-ball p {
     padding-right: 40px;
+    margin-top: -2px;
   }
 
   .advantages__item {

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 14px;
-  padding-top: 14px;
+  padding-top: 17px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -60,6 +60,7 @@
 @media only screen and (min-width: 768px) {
   .social {
     // width: 40%;
+    padding-top: 16px;
     border: none;
   }
 
@@ -69,5 +70,11 @@
 
   .social__item {
     margin-right: 30px;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .social {
+    padding-top: 12px;
   }
 }
