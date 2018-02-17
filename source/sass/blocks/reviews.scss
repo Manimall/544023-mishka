@@ -224,7 +224,7 @@
     @include centerer();
     padding-left: 175px;
     // margin-bottom: 67px;
-    margin-top: 80px;
+    margin-top: 90px;
     padding-top: 60px;
     padding-bottom: 105px;
     padding-right: 0;
@@ -246,7 +246,7 @@
   }
 
   .reviews__write {
-    margin-top: -70px;
+    margin-top: -68px;
     padding-top: 12px;
     padding-bottom: 12px;
     margin-bottom: 45px;
@@ -254,6 +254,7 @@
 
   .reviews__text {
     margin-bottom: 40px;
+    padding-right: 75px;
   }
 
   .reviews__buttons {
@@ -265,7 +266,7 @@
 @media (max-width: 767px) {
   .reviews__title {
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .reviews__text {

@@ -154,6 +154,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-top: -8px;
+    margin-left: -2px;
     margin-bottom: 35px;
   }
 
@@ -220,7 +221,7 @@
 
   .offer__header {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 56px;
     padding-left: 0;
   }
 
@@ -235,9 +236,7 @@
   .offer__product-week {
     text-align: center;
     width: 177px;
-    padding: 7px 40px;
-    padding-left: 25px;
-    // padding-right: 15px;
+    padding: 9px 40px 7px 25px;
     position: absolute;
     left: 0;
     top: 5px;
@@ -272,5 +271,15 @@
   .offer__price {
     font-size: 20px;
     padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .offer {
+    margin-top: 17px;
+  }
+
+  .offer__description {
+    margin-left: -2px;
   }
 }

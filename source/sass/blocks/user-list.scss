@@ -6,6 +6,10 @@
   transition: color 0.2s ease-in;
 }
 
+.user-list__item--cart {
+  border-bottom: none;
+}
+
 .user-list__link:hover svg {
   fill: $green-accent;
   transition: fill 0.4s ease-in;
@@ -19,7 +23,8 @@
 .user-list__icon {
   fill: #d3d2d2;
   position: absolute;
-  top: 37px;
+  //top: 37px;
+  top: 29px;
   left: 31px;
 
   &--search {
@@ -58,6 +63,11 @@
 
   .user-list__item a {
     padding-left: 30px;
+    padding-top: 32px;
+  }
+
+  .user-list__icon {
+    top: 37px;
   }
 
   .user-list__icon--cart {

@@ -49,7 +49,7 @@
 
   display: block;
   min-height: 102px;
-  padding: 26px $gutter 28px 32px;
+  padding: 26px $gutter 28px 28px;
   user-select: none;
 
   transition: transform 0.5s ease-in;
@@ -179,6 +179,7 @@
     margin-top: -45px;
 
     background-image: url("../img/hero-desktop@1x.jpg");
+    background-position-y: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dpi) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -236,6 +237,10 @@
   }
 
   .hero__container {
-    background-position: center -18px;
+    background-position: center -19px;
+  }
+
+  .hero__link {
+    min-height: 104px;
   }
 }
