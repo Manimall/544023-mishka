@@ -27,13 +27,13 @@
   font-weight: $bold;
   color: $h-color;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 70px;
   margin: 0;
 }
 
 .hero__list {
   margin: 0;
-  margin-top: 20px;
+  margin-top: -3px;
   padding: 0;
 }
 
@@ -49,7 +49,7 @@
 
   display: block;
   min-height: 102px;
-  padding: 28px $gutter;
+  padding: 26px $gutter 28px 32px;
   user-select: none;
 
   transition: transform 0.5s ease-in;
@@ -71,8 +71,8 @@
       height: 62px;
 
       position: absolute;
-      top: 27px;
-      right: 36px;
+      top: 24px;
+      right: 34px;
 
       background-image: url("../img/icon-interior.svg");
       opacity: 0.5;
@@ -87,8 +87,8 @@
       width: 60px;
       height: 60px;
       position: absolute;
-      top: 30px;
-      right: 27px;
+      top: 23px;
+      right: 23px;
 
       background-image: url("../img/icon-toy.svg");
       opacity: 0.5;
@@ -112,6 +112,7 @@
     margin-top: -63px;
     // width: 87%;
     background-image: url("../img/hero-tablet@1x.jpg");
+    background-position-y: 5px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -124,16 +125,16 @@
   }
 
   .hero__title {
-    padding: 153px 40px 0;
+    padding: 160px 40px 0;
     font-size: 43px;
     line-height: 50px;
   }
 
   .hero__list {
     display: flex;
+    margin-top: 4px;
     flex-direction: row;
     position: relative;
-    margin-top: 0;
   }
 
   .hero__item {
@@ -160,6 +161,16 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  .hero__link--lighter::after {
+    top: 30px;
+    right: 36px;
+  }
+
+  .hero__link--darker::after {
+    top: 32px;
+    right: 34px;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -173,6 +184,15 @@
       background-image: url("../img/hero-desktop@2x.jpg");
       background-size: 1150px auto;
     }
+  }
+
+  .hero__list {
+    margin-top: -2px;
+  }
+
+  .hero__link--darker::after {
+    top: 28px;
+    right: 35px;
   }
 
   .hero__list::after {
@@ -207,5 +227,15 @@
     //   background-repeat: repeat-x;
     //   background-position: -5px 0;
     // }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    border-top: 1px solid rgb(231, 231, 231);
+  }
+
+  .hero__container {
+    background-position: center -18px;
   }
 }

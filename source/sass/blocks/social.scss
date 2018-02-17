@@ -19,7 +19,15 @@
 }
 
 .social__item {
-  margin-right: 25px;
+  margin-right: 30px;
+}
+
+.social__item .social__link--insta {
+  margin-left: -5px;
+}
+
+.social__item .social__link--facebook {
+  margin-top: -3px;
 }
 
 .social__item:last-child {

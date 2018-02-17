@@ -10,7 +10,7 @@
 
   &::after {
     @include pseudo-element();
-    top: 100%;
+    top: 99.3%;
     left: -15%;
     width: 130%;
     height: 7px;
@@ -26,7 +26,13 @@
   line-height: 30px;
   font-weight: bold;
   color: $h-color;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
+  margin-top: 10px;
+}
+
+.offer__content {
+  padding-top: 6px;
+  padding-left: 2px;
 }
 
 .offer__product-week {
@@ -76,9 +82,9 @@
 }
 
 .offer__price {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: $bold;
-  margin: $gutter auto;
+  margin: 15px auto 25px;
   text-align: center;
 }
 
@@ -97,7 +103,7 @@
     // width: 87%;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 47px;
+    margin-top: 43px;
     // margin-bottom: 68px;
     padding-bottom: 55px;
 
@@ -130,7 +136,7 @@
   .offer__product-week {
     width: 120px;
     text-align: center;
-    margin-right: 26px;
+    margin-right: 3px;
     line-height: 1;
     margin-top: 5px;
   }
@@ -139,6 +145,7 @@
     display: flex;
     flex-direction: column;
     margin-right: 6.287%;
+    padding-top: 0;
     width: 43.71%;
   }
 
@@ -175,10 +182,12 @@
 
   .offer__price {
     width: 43.71%;
-    padding: 30px;
+    padding: 25px 30px 34px;
     margin: 0;
     text-align: center;
     max-width: 290px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .offer__order {
@@ -191,7 +200,7 @@
   .offer {
     // width: 1050px;
     margin: 70px auto 0;
-    padding-top: 55px;
+    padding-top: 52px;
     padding-bottom: 74px;
 
     &::after {

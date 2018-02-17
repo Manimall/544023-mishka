@@ -48,7 +48,7 @@
 }
 
 .contacts__map {
-  margin: 40px auto;
+  margin: 10px auto 35px;
   position: relative;
   width: 100vw;
   left: 50%;
@@ -110,21 +110,21 @@
 
 @media only screen and (min-width: 768px) {
   .contacts {
-    margin-top: 70px + 17px;
+    margin-top: 123px;
     margin-bottom: 60px;
   }
 
   .contacts__title {
     // width: 87%;
     // margin-left: 50px;
-    margin-bottom: 65px;
+    margin-bottom: 48px;
     font-size: 43px;
     line-height: 50px;
 
     &::before {
       @include pseudo-element();
-      top: -23px;
-      right: 0;
+      top: -16px;
+      right: 3px;
       width: 47px;
       height: 81px;
       background-image: url("../img/icon-flag.svg");
@@ -141,8 +141,21 @@
     flex-wrap: wrap;
   }
 
+  .contacts__info:last-of-type {
+    padding-right: 0;
+  }
+
+  .contacts__value:last-of-type {
+    padding-right: 0;
+    padding-left: 3px;
+  }
+
+  .contacts__mailto {
+    margin-left: 4px;
+  }
+
   .contacts__info {
-    padding-right: 40px;
+    padding-right: 54px;
   }
 
   .contacts__key,
@@ -154,7 +167,7 @@
   .contacts__map {
     width: 768px;
     height: 457px;
-    margin: 40px auto;
+    margin: 28px auto 54px;
     left: 0;
     right: 0;
 
@@ -175,7 +188,7 @@
   .contacts {
     width: 1050px;
     margin: 0 auto;
-    margin-top: 120px + 23px; // 70px - отступ + 50px - спозиционированная картинка + 23px - высота узора
+    margin-top: 220px;
     margin-bottom: 65px;
     display: flex;
     flex-direction: column;
@@ -184,8 +197,8 @@
   }
 
   .contacts__title {
-    margin-left: 0;
-    margin-bottom: 60px;
+    margin-left: -3px;
+    margin-bottom: 47px;
     font-size: 53px;
     line-height: 57px;
 
@@ -231,7 +244,7 @@
     height: 457px;
     width: 50%;
     margin: 0;
-    top: -50px;
+    top: -72px;
     right: 0;
     left: 50%;
     // width: 525px;
@@ -260,4 +273,20 @@
   //   margin: 0;
   //   position: static;
   // }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    margin-top: 30px;
+  }
+
+  .contacts__title {
+    margin-bottom: 28px;
+  }
+
+  .contacts__key {
+    padding-left: 4px;
+  }
+
+
 }

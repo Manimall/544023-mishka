@@ -1,7 +1,7 @@
 .reviews {
   // width: 81.25%;
   @include centerer();
-  margin: 20px auto 45px;
+  margin: 20px auto 40px;
   position: relative;
 
   &::after {
@@ -123,9 +123,9 @@
     width: 100%;
     padding-right: 50px;
     min-height: 457px;
-    padding-top: 75px;
+    padding-top: 68px;
     padding-bottom: 70px;
-    margin-bottom: 0;
+    margin-bottom: 100px;
     padding-left: 50px;
     display: flex;
     flex-direction: row;
@@ -147,6 +147,7 @@
       left: -10%;
       background-size: 768px 17px;
       background-position: -7px 0;
+      margin-top: 43px;
     }
   }
 
@@ -155,6 +156,7 @@
     line-height: 50px;
     order: -1;
     margin-top: 10px;
+    margin-left: -5px;
     flex-grow: 1;
   }
 
@@ -168,7 +170,7 @@
 
   .reviews__text {
     // padding-right: 65px;
-    margin-bottom: 50px;
+    margin-bottom: 59px;
     font-size: 17px;
   }
 
@@ -178,14 +180,20 @@
     font-size: 18px;
     line-height: 20px;
     order: -2;
-    height: 58px;
+    // height: 58px;
     width: 175px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     min-width: 175px;
   }
 
   .reviews__author-name {
-    margin-bottom: 7px;
+    margin-bottom: 4px;
+    word-spacing: 6px;
+    letter-spacing: 0.4px;
+  }
+
+  .reviews__author-name cite {
+    font-style: normal;
   }
 
   .reviews__buttons {
@@ -216,8 +224,8 @@
     @include centerer();
     padding-left: 175px;
     // margin-bottom: 67px;
-    margin-top: 0;
-    padding-top: 75px;
+    margin-top: 80px;
+    padding-top: 60px;
     padding-bottom: 105px;
     padding-right: 0;
 
@@ -225,8 +233,55 @@
       left: 0;
       width: 1050px;
       height: 23px;
+      margin-top: 55px;
       background-size: 1050px 23px;
       background-position: 24px 0;
     }
+  }
+
+  .reviews__title {
+    line-height: 57px;
+    font-size: 53px;
+    margin-bottom: 21px;
+  }
+
+  .reviews__write {
+    margin-top: -70px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 45px;
+  }
+
+  .reviews__text {
+    margin-bottom: 40px;
+  }
+
+  .reviews__buttons {
+    right: -1px;
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews__title {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .reviews__text {
+    margin-bottom: 30px;
+  }
+
+  .reviews__author-name {
+    margin-bottom: 3px;
+  }
+
+  .reviews__author-name cite {
+    font-style: normal;
+  }
+
+  .reviews__buttons {
+    margin-top: 30px;
+    margin-bottom: 37px;
   }
 }
