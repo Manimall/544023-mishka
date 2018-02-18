@@ -1,13 +1,10 @@
-.header-list,
-.user-list {
+.header-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
-.header-list__item,
-.user-list__item {
+.header-list__item {
   border-bottom: 1px solid rgb(236, 236, 236);
 }
 
@@ -31,8 +28,9 @@
 @media (min-width: 768px) {
   .header-list {
     order: 2;
-    // width: auto;
     width: 400px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .header-list__item {
@@ -69,7 +67,6 @@
 
   .header-list__item a {
     padding: 32px 35px 32px 0;
-
     font-size: 17px;
   }
 

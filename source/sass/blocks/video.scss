@@ -1,12 +1,9 @@
 .video {
   display: flex;
   flex-direction: column;
-
-  border: 1px solid rgb(237, 237, 237);
+  border: 1px solid #ededed;
 
   @include centerer();
-  // margin: 0 auto;
-  // width: 81.25%; // 260px
   margin-bottom: 58px;
 
   &:hover {
@@ -28,7 +25,6 @@
   content: "";
   width: 32px;
   height: 22px;
-
   position: absolute;
   top: 34px;
   left: 6px;
@@ -40,11 +36,9 @@
 .video__title {
   width: 50%;
   margin: 0 auto;
-
   font-size: 17px;
   color: $h-color;
   font-weight: $bold;
-
   padding-top: 30px;
   padding-bottom: 25px;
 }
@@ -67,13 +61,10 @@
   line-height: 16px;
   font-weight: $bold;
   text-transform: uppercase;
-
   width: 79.5%;
   margin: 0 auto;
-
   margin-bottom: 33px;
   min-width: 192px;
-
   padding-left: 22px;
   padding-right: 22px;
 }
@@ -104,7 +95,6 @@
   font-size: 0;
   border: none;
   background-color: transparent;
-  // background-image: url("../img/icon-play.svg");
   cursor: pointer;
 
   &:hover {
@@ -121,21 +111,8 @@
   }
 }
 
-// .video__control:hover svg,
-// .video__control:focus svg {
-//   transform: scale(1.2);
-//   outline: none;
-// }
-
-// .video__control:active svg {
-//   transform: scale(0.8);
-//   opacity: 0.3;
-//   outline: none;
-// }
-
 @media (min-width: 768px) {
   .video {
-    // width: 87%;
     margin-bottom: 67px;
   }
 
@@ -145,7 +122,6 @@
     min-height: 455px;
     margin: 0 auto;
     margin-bottom: 10px;
-    // max-width: 682px;
 
     background-image: url("../img/video-tablet@1x.jpg");
 
@@ -194,8 +170,6 @@
 
 @media (min-width: 1150px) {
   .video {
-    // width: 1050px;
-    // margin: 0 auto;
     margin-top: 57px;
     margin-bottom: 105px;
     min-height: 455px;

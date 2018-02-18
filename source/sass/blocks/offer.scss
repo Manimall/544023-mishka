@@ -1,8 +1,6 @@
 .offer {
   display: flex;
   flex-direction: column;
-  // width: 81.25%;
-  // margin: 0 auto;
   position: relative;
 
   @include centerer();
@@ -100,11 +98,9 @@
 
 @media (min-width: 768px) {
   .offer {
-    // width: 87%;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 43px;
-    // margin-bottom: 68px;
     padding-bottom: 55px;
 
     &::after {
@@ -201,7 +197,6 @@
 
 @media (min-width: 1150px) {
   .offer {
-    // width: 1050px;
     margin: 70px auto 0;
     padding-top: 52px;
     padding-bottom: 74px;

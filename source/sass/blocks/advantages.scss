@@ -1,6 +1,5 @@
 .advantages {
   @include centerer();
-  // width: 81.25%;
   margin: 32px auto 50px;
 }
 
@@ -38,10 +37,6 @@
   color: $h-color;
   font-weight: $bold;
 }
-
-// .advantages__item {
-//   fill: $green-accent;
-// }
 
 .advantages__item--icon-flower::before {
   top: 18px;
@@ -169,7 +164,7 @@
   }
 }
 
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
   .advantages {
     margin: 80px auto 60px;
   }
@@ -287,10 +282,6 @@
     margin-top: 28px;
     margin-left: -2px;
     margin-bottom: 0;
-  }
-
-  .advantages__list {
-    //
   }
 
   .advantages__item {

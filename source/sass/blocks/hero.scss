@@ -15,8 +15,6 @@
 }
 
 .hero__header {
-  // width: 81.25%;
-  // margin: 0 auto;
   @include centerer();
   min-height: 283px;
 }
@@ -46,11 +44,11 @@
   font-size: 19px;
   font-weight: $bold;
   color: #ffffff;
-
   display: block;
   min-height: 102px;
   padding: 26px $gutter 28px 28px;
   user-select: none;
+  padding-right: 115px;
 
   transition: transform 0.5s ease-in;
 
@@ -107,10 +105,8 @@
 @media (min-width: 768px) {
   .hero__container {
     @include centerer();
-    // margin: 0 auto;
     position: relative;
     margin-top: -57px;
-    // width: 87%;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position-y: 0;
 
@@ -154,10 +150,8 @@
   }
 
   .hero__link {
-    padding-top: 30px;
-    padding-left: 35px;
-    padding-bottom: 33px;
-
+    padding: 29px 115px 33px 36px;
+    min-height: 121px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -175,9 +169,7 @@
 
 @media (min-width: 1150px) {
   .hero__container {
-    // width: 1050px;
     margin-top: -45px;
-
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position-y: 0;
 
@@ -192,7 +184,7 @@
   }
 
   .hero__link--darker::after {
-    top: 28px;
+    top: 32px;
     right: 35px;
   }
 
@@ -215,19 +207,10 @@
     width: 260%;
     margin-left: -80%;
     position: relative;
+  }
 
-    // &::after {
-    //   @include pseudo-element();
-    //   width: 100%;
-    //   height: 34px;
-    //   bottom: -17px;
-    //   left: 0;
-
-    //   background-image: url("../img/bg-zigzag-fill.svg");
-    //   background-size: contain;
-    //   background-repeat: repeat-x;
-    //   background-position: -5px 0;
-    // }
+  .hero__link {
+    padding-right: 305px;
   }
 }
 
@@ -242,5 +225,9 @@
 
   .hero__link {
     min-height: 104px;
+  }
+
+  .hero__link--lighter {
+    padding-top: 27px;
   }
 }
