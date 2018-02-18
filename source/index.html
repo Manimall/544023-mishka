@@ -4,8 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#ffffff">
 
     <title>магазин товаров ручной работы "Mishka"</title>
+
+    <link rel="preload" as="style" href="css/style.min.css">
+    <link rel="preload" as="font" href="fonts/opensans.woff2">
+    <link rel="preload" as="font" href="fonts/opensansbold.woff2">
+    <link rel="preload" as="image" href="img/logo-mobile.svg" media="(max-width: 767px)">
+    <link rel="preload" as="image" href="img/logo-tablet.svg" media="(min-width: 768px)">
+    <link rel="preload" as="image" href="img/logo-desktop.svg" media="(min-width: 1150px)">
 
     <link href="css/style.min.css" rel="stylesheet">
 
@@ -29,10 +37,6 @@
         </a>
 
         <button class="main-nav__toggle toggle" type="button">
-          <!-- <span></span>
-          <span></span>
-          <span></span>
-          Открыть/Закрыть меню -->
           <span class="visually-hidden">Открыть/Закрыть меню</span>
         </button>
 
@@ -123,9 +127,9 @@
 
         <div class="offer__img">
           <picture>
-            <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/triple-set-mobile.webp 1x, img/triple-set-mobile@2x.webp 2x"> -->
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp-img/triple-set-desktop@1x.webp 1x, img/webp-img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp-img/triple-set-tablet@1x.webp 1x, img/webp-img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp-img/triple-set-mobile@1x.webp 1x, img/webp-img/triple-set-mobile@2x.webp 2x">
 
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
@@ -208,18 +212,7 @@
         </table>
 
         <div class="contacts__map" id="my-map">
-          <!--<img class="contacts__img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта">
-
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта, указывающая местонахождение Html-Academy"/>
-          </picture>  -->
-
-          <!--  <iframe src="https://yandex.ru/map-widget/v1/-/CBe4VCs-SD" width="560" height="400" frameborder="0"></iframe> -->
-          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15988.035052576044!2d30.30625045365359!3d59.94036584010551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML+Academy!5e0!3m2!1sru!2sru!4v1518591826823" id="map" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.7712692400273!2d30.32162330422974!3d59.935937526307626!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML+Academy!5e0!3m2!1sru!2sru!4v1518596097562" id="map" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-          <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBejFJtUWD" width="525" height="457px" frameborder="0"></iframe> -->
         </div>
 
         <div class="contacts__btn">
@@ -238,11 +231,6 @@
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer" width="102px" height="34px"></use>
           </svg>
         </a>
-          <!-- <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-footer__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка"/>
-          </picture> -->
 
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -305,11 +293,8 @@
       </div>
     </div>
 
-
-    <!-- <script src="js/button__toggle.js"></script> -->
     <script src="js/dropdown-menu.js"></script>
     <script src="js/modal-popup.js"></script>
-    <!-- <script src="js/map.js"></script> -->
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCNr7o82Iw1X1q39qfggM-ESFcEAHx7g4kcallback=initMap"></script> -->
     <script src="js/min.picturefill.js"></script>
