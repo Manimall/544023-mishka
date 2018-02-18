@@ -24,9 +24,9 @@
   right: 29px;
 }
 
-// .main-nav--no-js .toggle {
-//   display: none;
-// }
+.main-nav--no-js .toggle {
+  display: none;
+}
 
 .main-nav__list {
   width: 100%;
@@ -75,6 +75,11 @@
 }
 
 @media (max-width: 767px) {
+  .main-nav--closed .header-list,
+  .main-nav--closed .user-list {
+    display: none;
+  }
+
   .main-nav--no-js .header-list,
   .main-nav--no-js .user-list {
     display: block;
