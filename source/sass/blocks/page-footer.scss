@@ -11,10 +11,6 @@
   display: none;
 }
 
-.page-footer__logo-img {
-  //
-}
-
 .page-footer__social {
   min-height: 80px;
 }
@@ -23,7 +19,7 @@
   height: 80px;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .page-footer {
     min-height: 143px;
   }
@@ -31,8 +27,6 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    // width: 87%;
-    // margin: 0 auto;
     padding: 5px 0 30px;
     align-items: center;
   }
@@ -80,10 +74,8 @@
   }
 }
 
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
   .page-footer__wrapper {
-    // width: 1050px;
-    // margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 54px;
   }

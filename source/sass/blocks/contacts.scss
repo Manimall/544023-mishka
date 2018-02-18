@@ -5,8 +5,6 @@
 
 .contacts__title {
   @include centerer();
-  // width: 81.25%;
-  // margin: 0 auto;
   margin-bottom: 40px;
   font-size: 18px;
   line-height: 30px;
@@ -17,9 +15,6 @@
 
 .contacts__list {
   @include centerer();
-  // width: 81.25%;
-  // margin: 0 auto;
-  // border-collapse: collapse;
 }
 
 .contacts__value,
@@ -55,8 +50,6 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-
-  // width: 322px;
   height: 457px;
 
   background-color: rgb(236, 236, 236);
@@ -81,17 +74,6 @@
   }
 }
 
-// .contacts__img {
-//   width: 100vw;
-//   position: relative;
-//   left: 50%;
-//   right: 50%;
-//   margin-left: -50vw;
-//   margin-right: -50vw;
-//   height: 457px;
-//   background-repeat: no-repeat;
-// }
-
 .contacts__btn {
   width: 81.25%;
   margin: 0 auto;
@@ -104,11 +86,10 @@
   line-height: 20px;
   font-weight: $bold;
   text-transform: uppercase;
-  // max-width: 395px;
   width: 260px;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .contacts {
     margin-top: 120px;
     margin-bottom: 60px;
@@ -116,7 +97,6 @@
 
   .contacts__title {
     width: 88%;
-    // margin-left: 50px;
     margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
@@ -129,11 +109,6 @@
       height: 81px;
       background-image: url("../img/icon-flag.svg");
     }
-  }
-
-  .contacts__list {
-    // width: 87%;
-    // margin: 0 auto;
   }
 
   .contacts__list tbody {
@@ -193,7 +168,7 @@
   }
 }
 
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
   .contacts {
     width: 1050px;
     margin: 0 auto;
@@ -266,8 +241,6 @@
     top: -70px;
     right: 0;
     left: 50%;
-    // width: 525px;
-    // z-index: -1;
 
     background-image: url("../img/map-desktop@1x.jpg");
 
@@ -281,22 +254,6 @@
       left: 52%;
     }
   }
-
-  // .contacts__map {
-  //   position: absolute;
-  //   max-width: 525px;
-  //   top: -50px;
-  //   right: 0;
-  //   z-index: -1;
-  //   width: 50%;
-  //   margin: 0;
-  // }
-
-  // .contacts__img {
-  //   height: 458px;
-  //   margin: 0;
-  //   position: static;
-  // }
 }
 
 @media (max-width: 767px) {

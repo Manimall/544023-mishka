@@ -40,7 +40,6 @@
   .main-nav--closed .main-nav__toggle:active::before {
     background-color: $h-color;
     box-shadow: 0 5px 0 0  $h-color, 0 10px 0 0  $h-color;
-    // transition: background-color 1000ms ease-in-out;
   }
 
   .toggle--opened {
@@ -77,53 +76,3 @@
     }
   }
 }
-
-// .toggle {
-//   width: 23px;
-//   height: 23px;
-//   padding: 0;
-//   box-sizing: border-box;
-//   font-size: 0;
-//   line-height: 0;
-//   background-color: transparent;
-//   border: 0;
-//   overflow: hidden;
-//   cursor: pointer;
-//   outline: none;
-// }
-
-// .toggle > span {
-//   display: block;
-//   width: 20px;
-//   height: 2px;
-//   margin: 4px auto;
-//   box-sizing: border-box;
-//   background-color: #221f1f;
-// }
-
-// .toggle span:nth-child(1),
-// .toggle span:nth-child(3) {
-//   transform: rotate(0deg) translateY(0);
-//   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-// }
-
-// .toggle span:nth-child(2) {
-//   transform: translateX(0);
-//   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-// }
-
-// .toggle--opened span:nth-child(1) {
-//   width: 25px;
-//   height: 3px;
-//   transform: rotate(45deg) translate(5px, 5px);
-// }
-
-// .toggle--opened span:nth-child(3) {
-//   width: 25px;
-//   height: 3px;
-//   transform: rotate(-45deg) translate(5px, -4px);
-// }
-
-// .toggle--opened span:nth-child(2) {
-//   transform: translateX(-100px);
-// }

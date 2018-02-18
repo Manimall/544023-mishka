@@ -7,7 +7,6 @@
 }
 
 .social__list {
-  // min-height: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -57,9 +56,8 @@
   transition: fill 0.15s ease-in, opacity 0.15s ease-in;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .social {
-    // width: 40%;
     padding-top: 16px;
     border: none;
   }
@@ -73,7 +71,7 @@
   }
 }
 
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
   .social {
     padding-top: 12px;
   }
