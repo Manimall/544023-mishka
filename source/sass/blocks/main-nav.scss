@@ -1,8 +1,11 @@
 .main-nav {
   position: relative;
-
   display: flex;
   flex-direction: column;
+}
+
+.main-nav a {
+  color: $h-color;
 }
 
 .main-nav a:hover,
@@ -16,18 +19,19 @@
 }
 
 .main-nav__toggle {
-  border: none;
-  background-color: transparent;
+  @include pseudo-element();
+  top: 26px;
+  right: 29px;
+}
 
-  width: 22px;
-  height: 22px;
+.main-nav--no-js .toggle {
+  display: none;
+}
 
-  background-image: url("../img/icon-menu-open.svg");
-  background-repeat: no-repeat;
-
-  position: absolute;
-  top: 32px;
-  right: 30px;
+.main-nav--no-js .main-nav__list {
+  position: static;
+  bottom: 0;
+  display: block;
 }
 
 .main-nav__list {
@@ -42,6 +46,7 @@
   .main-nav {
     padding: 0 50px;
     z-index: 10;
+    display: flex;
 
     flex-direction: row;
     flex-wrap: wrap;
@@ -71,7 +76,13 @@
     order: 3;
 
     margin-left: auto;
-    margin-top: 25px;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav--closed .main-nav__list {
+    display: none;
   }
 }
 
@@ -84,8 +95,8 @@
   }
 
   .main-nav::after {
-    width: 1150px;
-    left: -50px;
+    width: 280%;
+    left: -90%;
   }
 
   .main-nav__sub-text {
@@ -94,5 +105,12 @@
     order: 4;
     margin: 0;
     margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav {
+    z-index: 3;
+    background-color: #ffffff;
   }
 }

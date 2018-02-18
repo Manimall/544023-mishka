@@ -1,7 +1,8 @@
 .social {
   display: flex;
   justify-content: center;
-  padding-bottom: 27px;
+  padding-bottom: 14px;
+  padding-top: 17px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -13,66 +14,67 @@
   padding: 0;
   margin: 0;
   max-width: 160px;
+  font-size: 0;
+  line-height: 0;
 }
 
 .social__item {
-  list-style: none;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  margin-right: 30px;
+}
+
+.social__item .social__link--insta {
+  margin-left: -5px;
+}
+
+.social__item .social__link--facebook {
+  margin-top: -3px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .social__link {
-  position: relative;
-  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
 
-  &--insta::before {
-    @include pseudo-element;
-    background-image: url("../img/icon-insta.svg");
-    left: -55px;
-    top: 0;
-    width: 22px;
-    height: 22px;
-  }
+.social__icon {
+  fill: #221f1f;
+}
 
-  &--facebook::before {
-    @include pseudo-element;
-    background-image: url("../img/icon-fb.svg");
-    left: 0;
-    top: -5px;
-    width: 15px;
-    height: 28px;
-    background-repeat: no-repeat;
-  }
+.social__link:hover .social__icon {
+  fill: #46c1af;
+  transition: fill 0.3s ease-in;
+}
 
-  &--twitter::before {
-    @include pseudo-element;
-    background-image: url("../img/icon-twitter.svg");
-    left: 50px;
-    top: 2px;
-    width: 24px;
-    height: 21px;
-    background-repeat: no-repeat;
-  }
+.social__link:active .social__icon {
+  fill: #46c1af;
+  opacity: 0.3;
+  transition: fill 0.15s ease-in, opacity 0.15s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
   .social {
     // width: 40%;
+    padding-top: 16px;
     border: none;
   }
 
   .social__list {
     justify-content: space-between;
-    align-items: center;
-    margin-top: 0;
   }
 
   .social__item {
-    padding-right: 30px;
+    margin-right: 30px;
   }
+}
 
-  .social__link {
-    //
+@media only screen and (min-width: 1150px) {
+  .social {
+    padding-top: 12px;
   }
 }

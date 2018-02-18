@@ -48,10 +48,15 @@
 }
 
 .contacts__map {
-  margin: 40px auto;
+  margin: 6px auto 38px;
   position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 
-  width: 322px;
+  // width: 322px;
   height: 457px;
 
   background-color: rgb(236, 236, 236);
@@ -62,6 +67,17 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
     background-size: 322px auto;
+  }
+
+  &::before {
+    @include pseudo-element();
+    top: 42%;
+    left: 53%;
+    transform: translate(-50%, -47%);
+    width: 66px;
+    height: 101px;
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -94,21 +110,21 @@
 
 @media only screen and (min-width: 768px) {
   .contacts {
-    margin-top: 70px + 17px;
+    margin-top: 120px;
     margin-bottom: 60px;
   }
 
   .contacts__title {
-    // width: 87%;
+    width: 88%;
     // margin-left: 50px;
-    margin-bottom: 65px;
+    margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
 
     &::before {
       @include pseudo-element();
-      top: -23px;
-      right: 0;
+      top: -13px;
+      right: 7px;
       width: 47px;
       height: 81px;
       background-image: url("../img/icon-flag.svg");
@@ -125,8 +141,29 @@
     flex-wrap: wrap;
   }
 
+  .contacts__info:last-of-type {
+    padding-right: 0;
+  }
+
+  .contacts__value--adress {
+    padding-right: 0;
+    padding-left: 5px;
+  }
+
+  .contacts__mailto {
+    margin-left: 6px;
+  }
+
   .contacts__info {
-    padding-right: 40px;
+    padding-right: 42px;
+  }
+
+  .contacts__key {
+    padding-right: 16px;
+  }
+
+  .contacts__key--adress {
+    padding-right: 25px;
   }
 
   .contacts__key,
@@ -138,6 +175,9 @@
   .contacts__map {
     width: 768px;
     height: 457px;
+    margin: 28px auto 54px;
+    left: 0;
+    right: 0;
 
     background-image: url("../img/map-tablet@1x.jpg");
 
@@ -149,6 +189,7 @@
 
   .contacts__write {
     width: 230px;
+    font-size: 17px;
   }
 }
 
@@ -156,7 +197,7 @@
   .contacts {
     width: 1050px;
     margin: 0 auto;
-    margin-top: 120px + 23px; // 70px - отступ + 50px - спозиционированная картинка + 23px - высота узора
+    margin-top: 220px;
     margin-bottom: 65px;
     display: flex;
     flex-direction: column;
@@ -165,15 +206,19 @@
   }
 
   .contacts__title {
-    margin-left: 0;
-    margin-bottom: 60px;
+    margin-left: -6px;
+    margin-bottom: 47px;
     font-size: 53px;
     line-height: 57px;
 
     &::before {
-      top: -10px;
-      left: -112px; // 65px + 47px
+      top: -8px;
+      left: -106px;
     }
+  }
+
+  .contacts__info {
+    margin-top: 2px;
   }
 
   .contacts__list {
@@ -188,12 +233,16 @@
   }
 
   .contacts__key {
-    padding-right: 30px;
+    padding-right: 0;
   }
 
   .contacts__key:last-of-type,
   .contacts__value:last-of-type {
     padding-bottom: 0;
+  }
+
+  .contacts__value--adress {
+    padding-left: 5px;
   }
 
   .contacts__btn {
@@ -204,6 +253,8 @@
   .contacts__write {
     width: 230px;
     margin-top: 80px;
+    padding: 14px $gutter;
+    font-size: 17px;
   }
 
   .contacts__map {
@@ -212,15 +263,22 @@
     height: 457px;
     width: 50%;
     margin: 0;
-    top: -50px;
+    top: -70px;
     right: 0;
-    z-index: -1;
+    left: 50%;
+    // width: 525px;
+    // z-index: -1;
 
     background-image: url("../img/map-desktop@1x.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/map-desktop@2x.jpg");
       background-size: 525px auto;
+    }
+
+    .contacts__map::before {
+      top: 43%;
+      left: 52%;
     }
   }
 
@@ -239,4 +297,27 @@
   //   margin: 0;
   //   position: static;
   // }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    margin-top: 42px;
+  }
+
+  .contacts__title {
+    margin-bottom: 26px;
+  }
+
+  .contacts__key {
+    padding-right: 11px;
+    padding-left: 5px;
+  }
+
+  .contacts__value {
+    padding-left: 10px;
+  }
+
+  .contacts__write {
+    padding: 14px $gutter;
+  }
 }
