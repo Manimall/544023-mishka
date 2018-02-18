@@ -18,7 +18,8 @@
     outline: none;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       background-color: #ffffff;
       outline: none;
     }

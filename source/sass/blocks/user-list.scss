@@ -1,21 +1,30 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .user-list__item {
+  border-bottom: 1px solid rgb(236, 236, 236);
   position: relative;
 }
 
 .user-list__link {
   transition: color 0.2s ease-in;
+  display: flex;
+  align-items: center;
 }
 
 .user-list__item--cart {
   border-bottom: none;
 }
 
-.user-list__link:hover svg {
+.user-list__link:hover .user-list__icon {
   fill: $green-accent;
   transition: fill 0.4s ease-in;
 }
 
-.user-list__link:active svg {
+.user-list__link:active .user-list__icon {
   fill: #c7ece7;
   transition: fill 0.1s ease-in;
 }
