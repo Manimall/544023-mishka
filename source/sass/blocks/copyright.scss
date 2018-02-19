@@ -1,13 +1,16 @@
 .copyright {
   display: flex;
   justify-content: center;
+  width: 183px;
+  margin: 0 auto;
 }
 
 .copyright__link {
   position: relative;
   display: flex;
   align-items: flex-start;
-  padding-right: 56px;
+  flex: 0 0 183px;
+  justify-content: space-between;
   font-weight: 700;
   font-size: 19px;
   line-height: 1;
@@ -30,9 +33,6 @@
 }
 
 .copyright__icon {
-  position: absolute;
-  top: 2px;
-  right: 0;
   fill: $green-accent;
 }
 
@@ -52,23 +52,17 @@
     justify-content: flex-end;
   }
 
-  .copyright__text {
-    margin-left: -3px;
-    padding-top: 2px;
+  .copyright__link {
+    align-items: center;
   }
 
-  .copyright__icon {
-    top: -3px;
+  .copyright__text {
+    padding-top: 0;
   }
 }
 
 @media (min-width: 1150px) {
   .copyright__text {
-    margin-top: -1px;
-    padding-top: 0;
-  }
-
-  .copyright__icon {
-    top: -6px;
+    margin-top: -4px;
   }
 }
