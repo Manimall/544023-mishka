@@ -270,6 +270,18 @@
   margin-top: 1px;
 }
 
+.form__text::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.form__text::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
 
 @media (min-width: 768px) {
   .form {
