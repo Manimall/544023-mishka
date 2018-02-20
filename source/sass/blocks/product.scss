@@ -164,13 +164,14 @@
   .product {
     flex-direction: column;
     margin-bottom: 0;
-    //margin-bottom: 40px;
-    //margin-bottom: auto;
     margin-top: 40px;
     width: 316px;
     min-height: 659px;
+    flex: 0 0 30%;
+    margin-right: 4.97%;
 
-    &:last-child {
+    &:nth-of-type(3n),
+    &:last-of-type {
       margin-right: 0;
     }
   }
