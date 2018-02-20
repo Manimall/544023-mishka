@@ -199,7 +199,7 @@
   .offer {
     margin: 70px auto 0;
     padding-top: 52px;
-    padding-bottom: 74px;
+    padding-bottom: 72px;
 
     &::after {
       left: 0;
@@ -218,13 +218,14 @@
 
   .offer__header {
     position: relative;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
     padding-left: 0;
   }
 
   .offer__title {
-    padding-left: 172px;
+    padding-left: 0;
     font-size: 53px;
+    margin-left: -8px;
     line-height: 57px;
     z-index: 1;
     margin-top: 0;
@@ -233,9 +234,9 @@
   .offer__product-week {
     text-align: center;
     width: 177px;
-    padding: 9px 38px 7px 25px;
-    position: absolute;
+    padding: 13px 38px 7px 25px;
     left: 0;
+    order: -1;
     top: 5px;
     margin: 0;
   }

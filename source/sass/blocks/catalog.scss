@@ -26,15 +26,26 @@
 .catalog__product {
   border: 1px solid #ededed;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (min-width: 768px) {
   .catalog {
     margin-top: 37px;
+    margin-bottom: 73px;
   }
 
   .catalog__product {
-    min-height: 330px;
+    min-height: 334px;
     margin-bottom: 55px;
   }
 
@@ -78,8 +89,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 110px;
+    justify-content: flex-start;
+    margin-top: 70px;
   }
 
   .catalog__product:last-of-type {
@@ -109,10 +120,10 @@
   }
 
   .catalog__product {
-    margin-bottom: 32px;
+    margin-bottom: 29px;
   }
 
   .catalog {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 }
