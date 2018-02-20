@@ -201,6 +201,7 @@
   border-bottom: 2px solid black;
   font-size: 17px;
   line-height: 18px;
+  padding-right: 50px;
 }
 
 .form__text:hover,
@@ -208,6 +209,10 @@
 .form__text:focus {
   border-bottom: 2px solid rgb(98, 209, 186);
   outline: none;
+}
+
+.form__text:invalid {
+  box-shadow:none;
 }
 
 .form__wrapper--no-legend .form__title {
@@ -437,6 +442,7 @@
     font-size: 19px;
     padding-left: 17px;
     background-color: transparent;
+    padding-right: 65px;
   }
 
   .form__textarea {
@@ -602,6 +608,10 @@
 
   .form__button {
     padding: 17px 30px;
+  }
+
+  .form__text {
+    padding-right: 110px;
   }
 }
 
