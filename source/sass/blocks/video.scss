@@ -71,9 +71,10 @@
 
 .video__video-img {
   min-height: 150px;
-
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   background-image: url("../img/video-mobile@1x.jpg");
   background-color: rgb(231, 231, 231);
@@ -89,9 +90,12 @@
 .video__control {
   width: 101px;
   height: 77px;
-
-  align-self: center;
-
+  //align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  padding: 0;
   font-size: 0;
   border: none;
   background-color: transparent;
@@ -249,10 +253,10 @@
     padding-top: 22px;
   }
 
-  .video__control {
-    margin-top: -3px;
-    margin-left: -12px;
-  }
+  // .video__control {
+  //   margin-top: -3px;
+  //   margin-left: -12px;
+  // }
 
   .video__text {
     width: 74.5%;

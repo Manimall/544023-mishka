@@ -94,7 +94,7 @@
             <div class="form__title">Тип</div>
             <div class="form__group">
               <label class="form__label form__label--ticks">
-                <input type="radio" name="type" value="accessory" class="visually-hidden" checked="">
+                <input type="radio" name="type" value="accessory" class="visually-hidden" checked>
                 <span class="form__radio"></span>
                 Аксессуар для интерьера
               </label>
@@ -112,12 +112,12 @@
             <div class="form__title">Цвет</div>
             <div class="form__group form__group--checkbox">
               <label class="form__label form__label--ticks">
-                <input type="checkbox" name="white" value="white" class="visually-hidden" checked="">
+                <input type="checkbox" name="white" value="white" class="visually-hidden" checked>
                 <span class="form__checkbox"></span>
                 Белый
               </label>
               <label class="form__label form__label--ticks">
-                <input type="checkbox" name="gray" value="gray" class="visually-hidden" checked="">
+                <input type="checkbox" name="gray" value="gray" class="visually-hidden" checked>
                 <span class="form__checkbox"></span>
                 Серый
               </label>
@@ -154,12 +154,12 @@
 
             <label class="form__label">
               <span class="form__personal">Имя:</span>
-              <input class="form__text" type="text" name="auth-name" placeholder="Введите ваше имя*" required="">
+              <input class="form__text" type="text" name="auth-name" placeholder="Введите ваше имя*" required>
             </label>
 
             <label class="form__label">
               <span class="form__personal">Фамилия:</span>
-              <input class="form__text" type="text" name="auth-surname" placeholder="Укажите фамилию*" required="">
+              <input class="form__text" type="text" name="auth-surname" placeholder="Укажите фамилию*" required>
             </label>
 
             <label class="form__label">
@@ -171,33 +171,42 @@
           </div>
         </fieldset>
 
-        <div class="form__wrapper form__wrapper--no-div form__wrapper--phone">
-          <label class="form__title form__title--line" for="user-phone">Тел</label>
-          <input class="form__text" id="user-phone" type="tel" placeholder="+7 XXX XX XX*" pattern="\+7\ [0-9]{3}\ [0-9]{2}\ [0-9]{2}" required="">
-          <svg class="form__icon form__icon--phone" width="25" height="24" aria-hidden="true" role="presentation">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone" width="25px" height="24px"></use>
-          </svg>
+        <div class="form__wrapper form__wrapper--phone">
+          <div class="form__container">
+            <label class="form__title form__title--line" for="user-phone">Тел</label>
+            <div class="form__mini-container">
+              <input class="form__text" id="user-phone" type="tel" placeholder="+7 XXX XX XX*" pattern="\+7\ [0-9]{3}\ [0-9]{2}\ [0-9]{2}" maxlength="12" required>
+              <svg class="form__icon form__icon--phone" width="25" height="24" aria-hidden="true" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone" width="25px" height="24px"></use>
+              </svg>
+            </div>
+          </div>
         </div>
 
-        <div class="form__wrapper form__wrapper--no-div form__wrapper--email">
-          <label class="form__title form__title--line" for="user-email">E-mail</label>
-          <input class="form__text" id="user-email" type="email" placeholder="Ваш Email*" required="">
-          <svg class="form__icon form__icon--email" width="32" height="32" aria-hidden="true" role="presentation">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail" width="32px" height="32px"></use>
-          </svg>
+        <div class="form__wrapper form__wrapper--email">
+          <div class="form__container">
+            <label class="form__title form__title--line" for="user-email">E-mail</label>
+            <div class="form__mini-container">
+              <input class="form__text" id="user-email" type="email" placeholder="Ваш Email*" maxlength="30" required>
+              <svg class="form__icon form__icon--email" width="32" height="32" aria-hidden="true" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail" width="32px" height="32px"></use>
+              </svg>
+            </div>
+          </div>
         </div>
 
         <div class="form__wrapper form__wrapper--textarea">
-          <label class="form__title form__title--line" for="u-message">Доп</label>
-          <textarea class="form__textarea" id="u-message" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <div class="form__container">
+            <label class="form__title form__title--line" for="u-message">Доп</label>
+            <textarea class="form__textarea" id="u-message" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
         </div>
 
         <div class="form__wrapper form__wrapper--finish-line">
-          <small class="form__warning">
-            *Поля обязательны для заполнения
-          </small>
-
-          <button class="form__button button" type="submit">Отправить заказ</button>
+          <div class="form__container">
+            <small class="form__warning">*Поля обязательны для заполнения</small>
+            <input class="form__button button" type="submit" value="Отправить заказ">
+          </div>
         </div>
 
       </form>
@@ -249,12 +258,10 @@
 
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Переход на страницу Интенсивного онлайн-курса Профессиональный HTML и CSS (уровень 2) компании HTML Academy">
-          <b class="copyright__text">
-            Разработано
-            <svg class="copyright__icon" width="27px" height="34px" role="img">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy" width="27px" height="34px"></use>
-            </svg>
-          </b>
+          <b class="copyright__text">Разработано</b>
+          <svg class="copyright__icon" width="27px" height="34px" role="img">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy" width="27px" height="34px"></use>
+          </svg>
         </a>
       </div>
 
