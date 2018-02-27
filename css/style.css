@@ -413,66 +413,6 @@ input[type="radio"].visually-hidden {
     background-color: #444444;
     border-color: #444444; }
 
-@media (max-width: 767px) {
-  .main-nav__toggle {
-    position: absolute;
-    top: 30px;
-    right: 32px;
-    z-index: 2;
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-color: #ffffff;
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    font-size: 0;
-    outline: none; }
-    .main-nav__toggle:hover, .main-nav__toggle:active, .main-nav__toggle:focus {
-      background-color: #ffffff;
-      outline: none; }
-  .main-nav--closed .main-nav__toggle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 20px;
-    height: 2.5px;
-    background-color: #000000;
-    -webkit-box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
-            box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
-    -webkit-transition: all 700ms ease-in-out;
-    transition: all 700ms ease-in-out; }
-  .main-nav--closed .main-nav__toggle:active::before {
-    background-color: #000000;
-    -webkit-box-shadow: 0 5px 0 0 #000000, 0 10px 0 0 #000000;
-            box-shadow: 0 5px 0 0 #000000, 0 10px 0 0 #000000; }
-  .toggle--opened {
-    top: 30px;
-    right: 37px;
-    background-color: #ffffff;
-    width: 20px; }
-    .toggle--opened::before, .toggle--opened::after {
-      content: "";
-      position: absolute;
-      top: 8px;
-      left: 0;
-      width: 30px;
-      height: 2.3px;
-      background-color: #000000;
-      -webkit-transition: all 700ms ease-in-out;
-      transition: all 700ms ease-in-out; }
-    .toggle--opened::before {
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
-      -webkit-box-shadow: none;
-              box-shadow: none; }
-    .toggle--opened::after {
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
-    .toggle--opened:active::before, .toggle--opened:active::after {
-      background-color: rgba(255, 255, 255, 0.3); } }
-
 .page-footer {
   min-height: 160px;
   background-color: #f1f1f1; }
