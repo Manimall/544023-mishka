@@ -15,6 +15,7 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var run = require("run-sequence");
 var del = require("del");
+var ghpages = require("gh-pages");
 
 
 gulp.task("style", function() {
@@ -101,3 +102,5 @@ gulp.task("clean", function () {
 gulp.task("build", function (done) {
   run("clean", "copy", "style", "images", "sprite", "html", done);
 });
+
+ghpages.publish("build");
