@@ -1,0 +1,290 @@
+[33mcommit 98b927fd77d4cd8c47368d4226b49933c11ded0e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 27 21:48:18 2018 +0300
+
+    test gh-pages
+
+[33mcommit 89829ec7b4d9c85126ddbcc9be05479207a141e5[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 27 21:29:03 2018 +0300
+
+    new toggle2
+
+[33mcommit c4201250f424dca054177dee61fb813686301f20[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 27 21:17:54 2018 +0300
+
+    new toggle
+
+[33mcommit 6fcadd5138d7715d074cd100a73360a92576cc92[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 27 19:38:44 2018 +0300
+
+    modal.scss
+
+[33mcommit e491784a688165f2d8481b7b76651696cdc2c744[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 27 17:11:09 2018 +0300
+
+    updated dev-dependencies
+
+[33mcommit 193a6704fd67bb54692c813e08935a0574392a05[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 27 16:49:22 2018 +0300
+
+    changed title of all pages
+
+[33mcommit 92ccf0fa279a10450b82065e41da340faf364cff[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 27 16:05:51 2018 +0300
+
+    deleted theme
+
+[33mcommit 5dc4347df2ad020a11eceeba64db805931f81c20[m
+Merge: c377a81 a93c160
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 27 15:33:47 2018 +0300
+
+    Merge branch 'master' of github.com:Manimall/544023-mishka
+
+[33mcommit c377a815ef34add4b656006fc9214459831ee373[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 27 15:31:08 2018 +0300
+
+    try to use github.io
+
+[33mcommit a93c16048bf86a3da099c287af11d7882605f67c[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 27 14:13:55 2018 +0300
+
+    Set theme jekyll-theme-leap-day
+
+[33mcommit 0aa5cdcbffe4c0d4043a42f144f568b37cc07a4b[m[33m ([m[1;31macademy/master[m[33m)[m
+Merge: 693adaf 201bf23
+Author: Dmitriy <30752178+mi5ha6in@users.noreply.github.com>
+Date:   Tue Feb 20 20:11:48 2018 +0500
+
+    Merge pull request #12 from Manimall/master
+    
+    b6 + b31
+
+[33mcommit 201bf2366bf12c00a7341ed0581aabbc8a63d25a[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 20 18:07:59 2018 +0300
+
+    hide x in ie
+
+[33mcommit 3cf78cd4dfa81814f719bd2eec44a7732d58213d[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 20 16:09:30 2018 +0300
+
+    form correct
+
+[33mcommit d4d951923ca3a43204f19b95bfb5b96252855c56[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 20 16:05:36 2018 +0300
+
+    stylelint
+
+[33mcommit cdd516c65e06626f3d55384c805f74d8a8ef835b[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 20 15:39:34 2018 +0300
+
+    perepolnenue3
+
+[33mcommit 2825a909ca2bf55a40c314bccc24c0094427b16d[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 20 14:46:36 2018 +0300
+
+    video__btn
+
+[33mcommit 8afd1ec8c2dec7ddbb8c6ebbe0e6671afd3c3d2f[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 20 14:37:32 2018 +0300
+
+    catalog perepolnenue2
+
+[33mcommit 92a3693c98b11afcb17fd94e60447a6620214810[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 20 14:34:50 2018 +0300
+
+    catalog perepolnenue
+
+[33mcommit 700dfa6a63da101a2194db1683e1edbe71efc73a[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 20 05:00:55 2018 +0300
+
+    please check all
+
+[33mcommit c7f17b4f59b5853dc4facb5a4c71a3cfa173eb47[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Tue Feb 20 04:27:12 2018 +0300
+
+    check base criteries + D17
+
+[33mcommit 772d602bc050d237611a0cbd45b1b02ac9268e9c[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Mon Feb 19 15:34:12 2018 +0300
+
+    b6 + b31
+
+[33mcommit 693adaf88f0e8fb4a94ccc4f4a1314dc6f18fd40[m
+Merge: eb4ee27 96a0407
+Author: Dmitriy <30752178+mi5ha6in@users.noreply.github.com>
+Date:   Sun Feb 18 21:14:29 2018 +0500
+
+    Merge pull request #11 from Manimall/master
+    
+    working menu
+
+[33mcommit 96a040769bf803a1110787c25a318a95fc804312[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 19:10:41 2018 +0300
+
+    working menu
+
+[33mcommit eb4ee27442efb89c9c130a5a220950af6154f0e2[m
+Merge: ced6762 bf9a3cc
+Author: Dmitriy <30752178+mi5ha6in@users.noreply.github.com>
+Date:   Sun Feb 18 20:23:27 2018 +0500
+
+    Merge pull request #10 from Manimall/module10-task1
+    
+    delete not-needed
+
+[33mcommit bf9a3cc75939e58f7c07a19465a79d020e29324f[m[33m ([m[1;31morigin/module10-task1[m[33m)[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 18:17:15 2018 +0300
+
+    2 pynktaa
+
+[33mcommit 08ee612fe438f4f6c0c516c28d42683259592b51[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 18:12:57 2018 +0300
+
+    2 pynkta
+
+[33mcommit 08b6444e23f5ea22ddc13f44d4b76ffdfb44cb76[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 17:40:42 2018 +0300
+
+    no--js
+
+[33mcommit 1523bf35abd3def07b3a75f7675b7017066cc042[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 15:17:49 2018 +0300
+
+    travis
+
+[33mcommit fcac3c38fe223d4fcd9bf93474a6ce1f7973b57c[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 15:11:11 2018 +0300
+
+    delete not-needed
+
+[33mcommit ced67620c928fb396718437f07cb1b53e3e2103f[m
+Merge: 4a59372 ae7d6b8
+Author: Dmitriy <30752178+mi5ha6in@users.noreply.github.com>
+Date:   Sun Feb 18 14:10:40 2018 +0500
+
+    Merge pull request #9 from Manimall/module9-task1
+    
+    Улучшаем скорость загрузки (необязательно)
+
+[33mcommit ae7d6b86d21ee8faeeb36504e32f94697e70c0df[m[33m ([m[1;31morigin/module9-task1[m[33m, [m[1;32mmodule9-task1[m[33m)[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 12:01:38 2018 +0300
+
+    improved toggle
+
+[33mcommit 4a593726ee67779c0a29cd082ad38412a48a64f3[m
+Merge: 355ac4f b46c835
+Author: Dmitriy <30752178+mi5ha6in@users.noreply.github.com>
+Date:   Sun Feb 18 13:46:39 2018 +0500
+
+    Merge pull request #8 from Manimall/module8-task1
+    
+    Автоматизация сборки личного проекта
+
+[33mcommit b46c835a6759d0ca87b10fe49811ac29cae35581[m[33m ([m[1;31morigin/module8-task1[m[33m, [m[1;32mmodule8-task1[m[33m)[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 11:08:09 2018 +0300
+
+    D23
+
+[33mcommit 4e9da1d8f195061a6bbc7a9af3a629dba5fb39c3[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 10:59:48 2018 +0300
+
+    correct mistakes
+
+[33mcommit b986c1a39410c86c2148a9501b247380ba389c87[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 10:15:44 2018 +0300
+
+    + webp
+
+[33mcommit cdccc41fdcf896699ed8f6cc25d785994572a7f8[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 10:02:43 2018 +0300
+
+    meta info
+
+[33mcommit 355ac4f90f7451abdfcd02f8e62415a6f5057ee0[m
+Merge: 7acbaaa 0e6457b
+Author: Dmitriy <30752178+mi5ha6in@users.noreply.github.com>
+Date:   Sun Feb 18 11:33:46 2018 +0500
+
+    Merge pull request #7 from Manimall/module7-task1
+    
+    Оптимизировать векторную графику
+
+[33mcommit 0e6457bc615a47e790d0b7a2d99446308b3cb32a[m[33m ([m[1;31morigin/module7-task1[m[33m)[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 03:28:56 2018 +0300
+
+    pp all
+
+[33mcommit 5f80b2fe89113d4c59d21dbe8f7c3fee08458e81[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 00:26:24 2018 +0300
+
+    index2 pp
+
+[33mcommit cdb756aec3da4e40379ecce694544e93ffad3c68[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sun Feb 18 00:07:39 2018 +0300
+
+    index pp
+
+[33mcommit b8dd0b346114330c7fff0bf33c27bf3374860dc2[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sat Feb 17 19:44:37 2018 +0300
+
+    trev
+
+[33mcommit a83693875b00abd3cd3231cf87c9208941a08cbb[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sat Feb 17 19:41:03 2018 +0300
+
+    catalog all
+
+[33mcommit 1a63e4850f8ab2c04bed864b9545f61db3ec2dfa[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sat Feb 17 17:56:56 2018 +0300
+
+    catalog desktop
+
+[33mcommit cb3b8d75bb762eb82fabd219dbd04d59c2dfd8fe[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sat Feb 17 15:42:34 2018 +0300
+
+    pp
+
+[33mcommit 34c9158e3512a7a60ff94a1ff47f801ca24745d7[m
+Author: Manimall <gorpunov94@mail.ru>
+Date:   Sat Feb 17 15:41:03 2018 +0300
+
+    pp index
+
+[33mcommit acb2bf0e9d85cc058cbd2f4b157501c533
