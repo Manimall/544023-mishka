@@ -79,8 +79,8 @@ table {
     padding-top: 10px;
     padding-bottom: 0;
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 165px;
-            flex: 1 0 165px; }
+        -ms-flex: 1 0 150px;
+            flex: 1 0 150px; }
   .page-header__logo-img {
     width: 113px;
     height: 46px; } }
