@@ -416,7 +416,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .main-nav__toggle {
     position: absolute;
-    top: 5px;
+    top: 7px;
     right: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -465,8 +465,7 @@ input[type="radio"].visually-hidden {
     -webkit-transition: top 0.3s 0.3s, -webkit-transform 0.3s;
     transition: top 0.3s 0.3s, -webkit-transform 0.3s;
     transition: top 0.3s 0.3s, transform 0.3s;
-    transition: top 0.3s 0.3s, transform 0.3s, -webkit-transform 0.3s;
-    transition: top 0.3s 0.3s, transform 0.3s; }
+    transition: top 0.3s 0.3s, transform 0.3s, -webkit-transform 0.3s; }
   .main-nav__toggle > .toggle__btn::after {
     top: -10px; }
   .main-nav__toggle > .toggle__btn::before {
@@ -477,11 +476,10 @@ input[type="radio"].visually-hidden {
   .main-nav--closed .main-nav__toggle > .toggle__btn::after,
   .main-nav--closed .main-nav__toggle > .toggle__btn::before {
     top: 0;
-    -webkit-transition: top 0.3s,-webkit-transform 0.3s 0.5s;
-    transition: top 0.3s,-webkit-transform 0.3s 0.5s;
-    transition: top 0.3s,transform 0.3s 0.5s;
-    transition: top 0.3s,transform 0.3s 0.5s,-webkit-transform 0.3s 0.5s;
-    transition: top 0.3s,transform 0.3s 0.5s; }
+    -webkit-transition: top 0.3s, -webkit-transform 0.3s 0.5s;
+    transition: top 0.3s, -webkit-transform 0.3s 0.5s;
+    transition: top 0.3s, transform 0.3s 0.5s;
+    transition: top 0.3s, transform 0.3s 0.5s, -webkit-transform 0.3s 0.5s; }
   .main-nav--closed .main-nav__toggle > .toggle__btn::after {
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
             transform: rotate3d(0, 0, 1, -45deg); }
