@@ -3196,7 +3196,8 @@ input[type="radio"].visually-hidden {
   background-color: #63d1bb;
   border-color: #63d1bb;
   -webkit-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
-  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-color 0.4s ease-in-out; }
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  cursor: pointer; }
   .modal__btn:hover {
     color: #63d1bb;
     background-color: #ffffff;
