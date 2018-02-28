@@ -10,7 +10,6 @@ function initMap() {
       lat: 59.936722,
       lng: 30.3201121
     },
-    mapTypeId: "satellite",
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: false,
