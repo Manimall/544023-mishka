@@ -26,7 +26,10 @@ function initMap() {
   };
 
   var marker = new google.maps.Marker({
-    position: map.getCenter(),
+    position: {
+      lat: 59.9387609,
+      lng: 30.3208389
+    },
     icon: customMarker,
     map: map,
     optimized: false
