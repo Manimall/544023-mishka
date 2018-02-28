@@ -3,12 +3,12 @@
 -----------------------------------------------------------------------------*/
 function initMap() {
   var map = new google.maps.Map(document.getElementById("my-map"), {
-    zoom: 16,
+    zoom: 17,
     center: {
       // lat: 59.936250,
       // lng: 30.321751
-      lat: 59.936722,
-      lng: 30.3201121
+      lat: 59.9389694,
+      lng: 30.3217322
     },
     mapTypeControl: false,
     streetViewControl: false,
@@ -26,7 +26,7 @@ function initMap() {
   };
 
   var marker = new google.maps.Marker({
-    position: map.getCenter(),
+    position: map,
     icon: customMarker,
     map: map,
     optimized: false
