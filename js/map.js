@@ -29,5 +29,4 @@ function initMap() {
     map: map,
     optimized: false
   });
-
 }
