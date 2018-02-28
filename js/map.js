@@ -3,15 +3,18 @@
 -----------------------------------------------------------------------------*/
 function initMap() {
   var map = new google.maps.Map(document.getElementById("my-map"), {
-    zoom: 17,
+    zoom: 16,
     center: {
-      lat: 59.936250,
-      lng: 30.321751
+      // lat: 59.936250,
+      // lng: 30.321751
+      lat: 59.936722,
+      lng: 30.3201121
     },
+    mapTypeId: "satellite",
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: false,
-    zoomControl: false
+    zoomControl: true
   });
 
   var svg = [
