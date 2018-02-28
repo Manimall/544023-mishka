@@ -1426,14 +1426,16 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1150px) {
   .contacts {
     width: 1050px;
-    margin: 221px auto 65px;
+    margin: 221px auto 66px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     position: relative;
     padding-left: 175px; }
   .contacts__title {
@@ -1445,10 +1447,10 @@ input[type="radio"].visually-hidden {
       top: -8px;
       left: -106px; }
   .contacts__info {
-    margin-top: 2px; }
+    margin-top: 3px; }
   .contacts__list {
     margin-left: 0;
-    width: 50%; }
+    width: 40%; }
   .contacts__list tbody {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1461,28 +1463,27 @@ input[type="radio"].visually-hidden {
             flex-direction: column; }
   .contacts__key {
     padding-right: 0; }
+  .contacts__key,
+  .contacts__value {
+    padding-bottom: 28px; }
   .contacts__key:last-of-type,
   .contacts__value:last-of-type {
     padding-bottom: 0; }
   .contacts__value--adress {
     padding-left: 5px; }
   .contacts__btn {
-    margin-left: 0;
-    text-align: left; }
+    text-align: left;
+    margin: -52px auto 40px 0; }
   .contacts__write {
     width: 230px;
-    margin-top: 80px;
     padding: 14px 30px;
     font-size: 17px; }
   .contacts__map {
-    position: absolute;
     max-width: 525px;
     height: 457px;
-    width: 50%;
+    width: 60%;
     margin: 0;
-    top: -70px;
-    right: 0;
-    left: 50%;
+    margin-top: -173px;
     background-image: url("../img/map-desktop@1x.jpg"); } }
   @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
     .contacts__map {
