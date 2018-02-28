@@ -32,7 +32,7 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("serve", function() {
+gulp.task("serve", ["watch"], function() {
   server.init({
     server: "build/",
     notify: false,
@@ -45,9 +45,9 @@ gulp.task("serve", function() {
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
-gulp.task("watch", ['browser-sync'], function() {
-  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/js/**/*.js", ["js"]);
+gulp.task("watch", function() {
+  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]).on("change", server.reload);
+  gulp.watch("source/js/**/*.js").on("change", server.reload);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 

@@ -5,13 +5,15 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById("my-map"), {
     zoom: 17,
     center: {
-      lat: 59.936250,
-      lng: 30.321751
+      // lat: 59.936250,
+      // lng: 30.321751
+      lat: 59.9389694,
+      lng: 30.3217322
     },
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: false,
-    zoomControl: false
+    zoomControl: true
   });
 
   var svg = [
@@ -24,9 +26,15 @@ function initMap() {
   };
 
   var marker = new google.maps.Marker({
-    position: map.getCenter(),
+    position: {
+      lat: 59.9389166,
+      lng: 30.3228697
+    },
     icon: customMarker,
     map: map,
     optimized: false
   });
+
+    // NOTE: This uses cross-domain XHR, and may not work on older browsers.
+  map.data.loadGeoJson([[[999.2958625834975,30.32376,59.940367],null,null,13.10000038146973],null,0,[["0x4696310fca5afc31:0x5f2ac55f567b2400","HTML Academy, Санкт-Петербург, gorod Sankt-Peterburg",[59.9404475,30.3239371],"6857510395888477184"],"HTML Academy",["Санкт-Петербург","gorod Sankt-Peterburg"],4,"Отзывов: 2","http://www.google.ru/search?q=HTML+Academy,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+gorod+Sankt-Peterburg\u0026ludocid=6857510395888477184#lrd=0x4696310fca5afc31:0x5f2ac55f567b2400,1",null,"8 (921) 894-97-77",null,null,null,["https://htmlacademy.ru/","htmlacademy.ru",null,null,"1,AOvVaw0cDULj7xloVj5MLe_EIg9h,,0ahUKEwjIzKKfncnZAhVCkiwKHfhNAYoQ61gICigGMAA,,"],"Учебное заведение","Санкт-Петербург, gorod Sankt-Peterburg",null,null,null,null,null,["http://www.google.ru/search?q=HTML+Academy,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+gorod+Sankt-Peterburg\u0026ludocid=6857510395888477184#lrd=0x4696310fca5afc31:0x5f2ac55f567b2400,1","Отзывов: 2",null,null,1,null,null,1],null,null,1,1,null,null,null,"ChIJMfxayg8xlkYRACR7Vl_FKl8",null,null,"0ahUKEwjIzKKfncnZAhVCkiwKHfhNAYoQ8BcIAigAMAA",null,null,["tel://+79218949777",null,null,null,"1,AOvVaw2TnKJ3h5E64yAH3sceHCgY,,0ahUKEwjIzKKfncnZAhVCkiwKHfhNAYoQ_doBCAcoBDAA,,"]]],null,null,[null,null,null,null,null,null,null,null,null,[0,0],null,[0]],0]);
 }
