@@ -20,18 +20,18 @@
     outline: none;
   }
 
-  .main-nav__toggle > .toggle__btn {
+  .toggle__btn {
     position: relative;
     display: inline-block;
     width: 30px;
     height: 3px;
     vertical-align: bottom;
     background: #000000;
-    transition: background 0.6s ease-in-out;
+    transition: background 0.7s 0.7s;
   }
 
-  .main-nav__toggle > .toggle__btn::after,
-  .main-nav__toggle > .toggle__btn::before {
+  .toggle__btn::after,
+  .toggle__btn::before {
     content: "";
     position: absolute;
     left: 0;
@@ -39,34 +39,34 @@
     height: 3px;
     background: #000000;
     transform-origin: 50% 50%;
-    transition: top 0.3s 0.3s, transform 0.3s;
+    transition: top 0.5s 0.5s, transform 0.5s;
   }
 
-  .main-nav__toggle > .toggle__btn::after {
+  .toggle__btn::after {
     top: -10px;
   }
 
-  .main-nav__toggle > .toggle__btn::before {
+  .toggle__btn::before {
     top: 10px;
   }
 
-  .main-nav--closed .main-nav__toggle > .toggle__btn::before {
+  .toggle--opened .toggle__btn::before {
     transform: rotate3d(0, 0, 1, 45deg);
   }
 
-  .main-nav--closed .main-nav__toggle > .toggle__btn::after,
-  .main-nav--closed .main-nav__toggle > .toggle__btn::before {
+  .toggle--opened .toggle__btn::after,
+  .toggle--opened .toggle__btn::before {
     top: 0;
     transition: top 0.3s, transform 0.3s 0.5s;
   }
 
-  .main-nav--closed .main-nav__toggle > .toggle__btn::after {
+  .toggle--opened .toggle__btn::after {
     transform: rotate3d(0, 0, 1, -45deg);
   }
 
-  .main-nav--closed .main-nav__toggle > .toggle__btn {
-    background: #ffffff;
-    transition: background 0.1s 0;
+  .toggle--opened .toggle__btn {
+    background: 0 0;
+    transition: background 0.01s 0.01s;
   }
 }
 

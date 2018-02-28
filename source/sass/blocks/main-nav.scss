@@ -18,15 +18,9 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-nav__toggle {
-  @include pseudo-element();
-  top: 26px;
-  right: 29px;
-}
-
-.main-nav--no-js .toggle {
-  display: none;
-}
+// .main-nav--no-js .toggle {
+//   display: none;
+// }
 
 .main-nav__list {
   width: 100%;
