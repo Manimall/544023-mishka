@@ -27,8 +27,8 @@ function initMap() {
 
   var marker = new google.maps.Marker({
     position: {
-      lat: 59.9403658,
-      lng: 30.3215713
+      lat: 59.9389166,
+      lng: 30.3228697
     },
     icon: customMarker,
     map: map,
