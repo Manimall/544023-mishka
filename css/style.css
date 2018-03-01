@@ -1545,12 +1545,11 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   display: block;
   min-height: 102px;
-  padding: 26px 30px 28px 28px;
+  padding: 26px 170px 28px 28px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding-right: 150px;
   -webkit-transition: -webkit-transform 0.5s ease-in;
   transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
