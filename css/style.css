@@ -1550,7 +1550,7 @@ input[type="radio"].visually-hidden {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding-right: 115px;
+  padding-right: 150px;
   -webkit-transition: -webkit-transform 0.5s ease-in;
   transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
@@ -1640,7 +1640,7 @@ input[type="radio"].visually-hidden {
     background-size: 768px 24px;
     background-position: 18px 0; }
   .hero__link {
-    padding: 29px 115px 33px 36px;
+    padding: 29px 150px 33px 36px;
     min-height: 121px;
     font-size: 20px;
     line-height: 30px; }
