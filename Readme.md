@@ -1,5 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Manimall/544023-mishka.svg)](https://greenkeeper.io/)
+
 * Студент: [Max Kravchenko](https://up.htmlacademy.ru/adaptive/13/user/544023).
 * Наставник: [Дмитрий Мишагин](https://htmlacademy.ru/profile/id118967).
 
