@@ -54,7 +54,7 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный HTML и CSS](https://htmlacademy.ru/intensive/adaptive)», уровень 2 от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.org/htmlacademy-adaptive/544023-mishka.svg?branch=master
-[travis-url]: https://travis-ci.org/htmlacademy-adaptive/544023-mishka
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/544023-mishka/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/544023-mishka?type=dev
+[travis-image]: https://travis-ci.org/Manimall/544023-mishka.svg?branch=master
+[travis-url]: https://travis-ci.org/Manimall/544023-mishka
+[dependency-image]: https://david-dm.org/Manimall/544023-mishka/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/Manimall/544023-mishka?type=dev
