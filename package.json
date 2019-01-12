@@ -5,7 +5,7 @@
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "^9.0.0",
+    "autoprefixer": "^9.4.5",
     "browser-sync": "^2.23.6",
     "del": "^3.0.0",
     "gh-pages": "^1.1.0",
