@@ -24,7 +24,7 @@
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
     "stylelint": "~9.9.0",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "~0.1.2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
